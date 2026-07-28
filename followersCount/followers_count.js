@@ -20,6 +20,11 @@ function checkCountValue() {
         alert('Congratualations you got ' + count + ' followers!')
     }
 }
+function resetCount(){
+    count = 0;
+    alert('Hey your followers got reset now you have ' + count + ' followers!')
+    displayCount();
+}
 function increaseCount() {
     count++;
     displayCount();
