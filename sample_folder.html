@@ -8,6 +8,1587 @@
 <body>
     <h1>Scope Lab for Var, Let and Const</h1>
     </h1>
+    <table>
+<tbody><tr>
+<th width="20%">JavaScript Array and Objects </th><th width="50%">Description </th><th width="30%">Code Example</th>
+</tr>
+
+<tr>
+<td><b>Array declaration</b></td>
+<td>
+Arrays in JavaScript are ordered, meaning that the elements are stored in a specific sequence.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li></ol><ol class="linenums wrap-code"><li class="L0"><code class="language-html"><span class="pln">const fruits = ["apple", "banana", "cherry"];</span></code></li></ol>
+          <div class="code-block-actions z-0 single-line">
+            <button title="Copy" class="action-code-block copy-code-block" fdprocessedid="5wwqc">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-0">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block" fdprocessedid="2m8oc4">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-0">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+
+    
+<tr>
+<td><b>Array Indexing</b></td>
+<td>
+Arrays are zero-indexed, meaning the first element is at index 0, the second at index 1, and so on.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li></ol><ol class="linenums"><li class="L0"><code class="language-html"><span class="pln">const fruits = ["apple", "banana", "cherry"];</span></code></li><li class="L1"><code class="language-html"><span class="pln">const firstFruit = fruits[0]; // "apple"</span></code></li><li class="L2"><code class="language-html"><span class="pln">const secondFruit = fruits[1]; // "banana"</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="829nb8">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-1">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="6ei4vh">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-1">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+    
+<tr>
+<td><b>Array Length</b></td>
+<td>
+The length property is used to determine the number of items present in an array. 
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li></ol><ol class="linenums"><li class="L0"><code class="language-html"><span class="pln">const fruits = ["apple", "banana", "cherry"];</span></code></li><li class="L1"><code class="language-html"><span class="pln">const numFruits = fruits.length; // 3</span></code></li><li class="L2"><code class="language-html"><span class="pln">console.log(numFruits);</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="fuj36">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-2">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="8xwqg">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-2">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+    
+<tr>
+<td><b>Array Mutability</b></td>
+<td>
+Arrays in JavaScript are mutable, meaning you can change, add, or remove elements after the array is created.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li></ol><ol class="linenums"><li class="L0"><code class="language-html"><span class="pln">const fruits = ["apple", "banana", "cherry"];</span></code></li><li class="L1"><code class="language-html"><span class="pln">fruits[2] = "strawberry"; // Modifying an element</span></code></li><li class="L2"><code class="language-html"><span class="pln">fruits[3] = "Kiwi"; // Adding an element</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="o2fzdf">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-3">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="fadlxh">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-3">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+    
+<tr>
+<td><b>push method</b></td>
+<td>
+Adds one or more elements to the end of an array.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li></ol><ol class="linenums"><li class="L0"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> fruits </span><span class="pun">=</span><span class="pln"> </span><span class="pun">[</span><span class="str">"apple"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"banana"</span><span class="pun">];</span></code></li><li class="L1"><code class="language-javascript"><span class="pln">fruits</span><span class="pun">.</span><span class="pln">push</span><span class="pun">(</span><span class="str">"orange"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"strawberry"</span><span class="pun">);</span></code></li><li class="L2"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">fruits</span><span class="pun">)</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="bbua4a">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-4">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="2f527h">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-4">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+    
+<tr>
+<td><b>pop method</b></td>
+<td>
+Removes the last element from an array and returns it.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li><li>4</li></ol><ol class="linenums"><li class="L0"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> fruits </span><span class="pun">=</span><span class="pln"> </span><span class="pun">[</span><span class="str">"apple"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"banana"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"orange"</span><span class="pun">];</span></code></li><li class="L1"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> removedFruit </span><span class="pun">=</span><span class="pln"> fruits</span><span class="pun">.</span><span class="pln">pop</span><span class="pun">();</span></code></li><li class="L2"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="str">'Fruits are'</span><span class="pun">,</span><span class="pln">fruits</span><span class="pun">)</span></code></li><li class="L3"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="str">'Removed fruits are'</span><span class="pun">,</span><span class="pln">removedFruit</span><span class="pun">)</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="18ip7p">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-5">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="e50g8t">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-5">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+    
+<tr>
+<td><b>shift methods</b></td>
+<td>
+Removes the first element from an array and returns it.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li></ol><ol class="linenums"><li class="L0"><code class="language-javascript"><span class="typ">Removes</span><span class="pln"> the first element from an array and returns it</span><span class="pun">.</span></code></li></ol>
+          <div class="code-block-actions z-0 single-line">
+            <button title="Copy" class="action-code-block copy-code-block" fdprocessedid="t2dlcq">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-6">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block" fdprocessedid="dsd4tv">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-6">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+    
+<tr>
+<td><b>unshift method</b></td>
+<td>
+Adds one or more elements to the beginning of an array and returns it.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li></ol><ol class="linenums"><li class="L0"><code class="language-html"><span class="pln">const fruits = ["banana", "orange"];</span></code></li><li class="L1"><code class="language-html"><span class="pln">fruits.unshift("apple", "strawberry");</span></code></li><li class="L2"><code class="language-html"><span class="pln">console.log(fruits);</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="s9xlq">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-7">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="umh98f">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-7">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+    
+<tr>
+<td><b>splice method</b></td>
+<td>
+Changes the contents of an array by removing, replacing, or adding elements at a specified position.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li></ol><ol class="linenums"><li class="L0"><code class="language-html"><span class="pln">const fruits = ["apple", "banana", "cherry"];</span></code></li><li class="L1"><code class="language-html"><span class="pln">fruits.splice(1, 1, "grape"); // Replace the second element with "grape"</span></code></li><li class="L2"><code class="language-html"><span class="pln">console.log(fruits)</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="nhoumn">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-8">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="zx42dv">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-8">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+    
+<tr>
+<td><b>concat method</b></td>
+<td>
+The concat method in JavaScript arrays combines arrays in sequence, creating a new array containing the elements of the original arrays in the order they were concatenated.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li><li>4</li></ol><ol class="linenums"><li class="L0"><code class="language-html"><span class="pln">const fruits = ["apple", "banana"];</span></code></li><li class="L1"><code class="language-html"><span class="pln">const additionalFruits = ["orange", "strawberry"];</span></code></li><li class="L2"><code class="language-html"><span class="pln">const combinedFruits = fruits.concat(additionalFruits);</span></code></li><li class="L3"><code class="language-html"><span class="pln">console.log(‘combinedFruits are’, combinedFruits)</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="lhf7yv">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-9">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="twy8z">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-9">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+    
+<tr>
+<td><b>slice method</b></td>
+<td>
+Returns a shallow copy of a portion of an array into a new array.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li></ol><ol class="linenums"><li class="L0"><code class="language-html"><span class="pln">const fruits = ["apple", "banana", "cherry", "orange"];</span></code></li><li class="L1"><code class="language-html"><span class="pln">const slicedFruits = fruits.slice(1, 3); // Creates a new array with elements from index 1 to 2 (not including 3).</span></code></li><li class="L2"><code class="language-html"><span class="pln">console.log(‘slicedFruits are’,slicedFruits)</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="wxhmv6">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-10">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="kxtsxo">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-10">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+<tr>
+<td><b>indexOf method</b></td>
+<td>
+This method is used to find the index of a specified element within an array. It returns the index of the first occurrence of the element in the array, or -1 if the element is not found.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li></ol><ol class="linenums"><li class="L0"><code class="language-html"><span class="pln">const fruits = ["apple", "banana", "cherry", "banana"];</span></code></li><li class="L1"><code class="language-html"><span class="pln">const index = fruits.indexOf("banana"); // Returns 1 (the first occurrence of "banana")</span></code></li><li class="L2"><code class="language-html"><span class="pln">console.log(‘Index of banana is’, index)</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="0uxnfl">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-11">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="hlnbsi">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-11">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+    
+<tr>
+<td><b>reverse method</b></td>
+<td>
+The reverse method reverses the order of elements in an array, effectively reversing the array in place.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li></ol><ol class="linenums"><li class="L0"><code class="language-html"><span class="pln">const fruits = ["apple", "banana", "cherry"];</span></code></li><li class="L1"><code class="language-html"><span class="pln">fruits.reverse(); // Reverses the order of the array</span></code></li><li class="L2"><code class="language-html"><span class="pln">console.log(fruits)</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="n3jijb">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-12">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="p4uaeo">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-12">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+    
+<tr>
+<td><b>sort method</b></td>
+<td>
+The sort method is used to sort the elements of an array in place and returns the sorted array. By default, it sorts elements as strings and in lexicographic order.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li><li>4</li></ol><ol class="linenums"><li class="L0"><code class="language-html"><span class="pln">const numbers = [4, 2, 8, 6, 1,10];</span></code></li><li class="L1"><code class="language-html"><span class="pln">numbers.sort(); // Sorts as strings: [1,10, 2, 4, 6, 8]</span></code></li><li class="L2"><code class="language-html"><span class="pln">numbers.sort((a, b) =&gt; a - b); // Sorts as numbers: [1, 2, 4, 6, 8]</span></code></li><li class="L3"><code class="language-html"><span class="pln">console.log(numbers)</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="1umbq">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-13">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="r773s">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-13">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+    
+<tr>
+<td><b>Array iteration</b></td>
+<td>
+A for loop can be used to iterate through the elements of an array to access and manipulate each item in the array.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li><li>4</li></ol><ol class="linenums"><li class="L0"><code class="language-html"><span class="pln">const fruits = ['apple', 'banana', 'cherry', 'date'];</span></code></li><li class="L1"><code class="language-html"><span class="pln">for (let i = 0; i &lt; fruits.length; i++) {</span></code></li><li class="L2"><code class="language-html"><span class="pln">    console.log(fruits[i]);</span></code></li><li class="L3"><code class="language-html"><span class="pln">}</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="nllu3g">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-14">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="vvhg6u">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-14">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+    
+<tr>
+<td>forEach<b></b></td>
+<td>
+The forEach method iterates through an array and applies a provided function to each element.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li><li>11</li><li>12</li></ol><ol class="linenums"><li class="L0"><code class="language-html"><span class="pln">function sendWelcomeEmail(email) {</span></code></li><li class="L1"><code class="language-html"><span class="pln">    console.log(`Welcome email sent to ${email}`);</span></code></li><li class="L2"><code class="language-html"><span class="pln">}</span></code></li><li class="L3"><code class="language-html"><span class="pln">const users = [</span></code></li><li class="L4"><code class="language-html"><span class="pln">    { name: 'Alice', email: 'alice@example.com' },</span></code></li><li class="L5"><code class="language-html"><span class="pln">    { name: 'Bob', email: 'bob@example.com' },</span></code></li><li class="L6"><code class="language-html"><span class="pln">    { name: 'Charlie', email: 'charlie@example.com' },</span></code></li><li class="L7"><code class="language-html"><span class="pln">];</span></code></li><li class="L8"><code class="language-html"></code></li><li class="L9"><code class="language-html"><span class="pln">users.forEach((user) =&gt; {</span></code></li><li class="L0"><code class="language-html"><span class="pln">    sendWelcomeEmail(user.email);</span></code></li><li class="L1"><code class="language-html"><span class="pln">});</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="iz073c">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-15">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="gxclm9">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-15">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+
+    
+<tr>
+<td><b>map method</b></td>
+<td>
+The map method creates a new array by applying a provided function to each element in the original array.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li></ol><ol class="linenums"><li class="L0"><code class="language-html"><span class="pln">const products = [</span></code></li><li class="L1"><code class="language-html"><span class="pln">    { name: 'Laptop', price: 1000 },</span></code></li><li class="L2"><code class="language-html"><span class="pln">    { name: 'Smartphone', price: 500 },</span></code></li><li class="L3"><code class="language-html"><span class="pln">    { name: 'Tablet', price: 300 },</span></code></li><li class="L4"><code class="language-html"><span class="pln">];</span></code></li><li class="L5"><code class="language-html"></code></li><li class="L6"><code class="language-html"><span class="pln">products.map((product) =&gt; {</span></code></li><li class="L7"><code class="language-html"><span class="pln">    console.log(`The price of ${product.name} is $${product.price}`);</span></code></li><li class="L8"><code class="language-html"><span class="pln">});</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="addal">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-16">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="u9fk7p">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-16">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+<tr>
+<td><b>filter method</b></td>
+<td>
+The filter method creates a new array containing elements that pass a specified condition. It's useful for extracting specific data from an array.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li>16</li><li>17</li><li>18</li><li>19</li><li>20</li></ol><ol class="linenums"><li class="L0"><code class="language-html"><span class="pln">const products = [</span></code></li><li class="L1"><code class="language-html"><span class="pln">    { name: 'Laptop', price: 1000 },</span></code></li><li class="L2"><code class="language-html"><span class="pln">    { name: 'Smartphone', price: 500 },</span></code></li><li class="L3"><code class="language-html"><span class="pln">    { name: 'Tablet', price: 300 },</span></code></li><li class="L4"><code class="language-html"><span class="pln">    { name: 'Monitor', price: 250 },</span></code></li><li class="L5"><code class="language-html"><span class="pln">    { name: 'Keyboard', price: 50 },</span></code></li><li class="L6"><code class="language-html"><span class="pln">];</span></code></li><li class="L7"><code class="language-html"></code></li><li class="L8"><code class="language-html"><span class="pln">function filterProductsByPriceRange(products, minPrice, maxPrice) {</span></code></li><li class="L9"><code class="language-html"><span class="pln">    return products.filter((product) =&gt; product.price &gt;= minPrice &amp;&amp; product.price &lt;= maxPrice);</span></code></li><li class="L0"><code class="language-html"><span class="pln">}</span></code></li><li class="L1"><code class="language-html"></code></li><li class="L2"><code class="language-html"><span class="pln">const minPrice = 100;  // Minimum price threshold</span></code></li><li class="L3"><code class="language-html"><span class="pln">const maxPrice = 500;  // Maximum price threshold</span></code></li><li class="L4"><code class="language-html"></code></li><li class="L5"><code class="language-html"><span class="pln">const filteredProducts = filterProductsByPriceRange(products, minPrice, maxPrice);</span></code></li><li class="L6"><code class="language-html"></code></li><li class="L7"><code class="language-html"><span class="pln">filteredProducts.forEach((product) =&gt; {</span></code></li><li class="L8"><code class="language-html"><span class="pln">    console.log(`${product.name} is of $${product.price}`);</span></code></li><li class="L9"><code class="language-html"><span class="pln">});</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="h2i61h">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-17">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="ddqx54">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-17">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+<tr>
+<td><b>reduce method</b></td>
+<td>
+The reduce method allows you to reduce an array to a single value by applying a function to each element. It's excellent for aggregating data.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li><li>4</li></ol><ol class="linenums"><li class="L0"><code class="language-html"><span class="pln">const orderPrices = [50, 30, 25, 40, 15];</span></code></li><li class="L1"><code class="language-html"></code></li><li class="L2"><code class="language-html"><span class="pln">const totalOrderValue = orderPrices.reduce((total, price) =&gt; total + price, 0);</span></code></li><li class="L3"><code class="language-html"><span class="pln">console.log(‘The total value of order is ’, totalOrderValue)</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="1v4efc">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-18">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="k9tw6">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-18">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+    
+<tr>
+<td><b>find method</b></td>
+<td>
+The find method returns the first element in an array that satisfies a specified condition. It's useful for searching for specific data.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li></ol><ol class="linenums"><li class="L0"><code class="language-html"><span class="pln">const employees = [</span></code></li><li class="L1"><code class="language-html"><span class="pln">    { id: 1, name: 'Alice', Eid: 'EMP001', 'Contact details': 'alice@example.com', Role: 'Manager', Designation: 'Project Manager', Experience: '5 years' },</span></code></li><li class="L2"><code class="language-html"><span class="pln">    { id: 2, name: 'Bob', Eid: 'EMP002', 'Contact details': 'bob@example.com', Role: 'Engineer', Designation: 'Software Engineer', Experience: '3 years' },</span></code></li><li class="L3"><code class="language-html"><span class="pln">    { id: 3, name: 'Charlie', Eid: 'EMP003', 'Contact details': 'charlie@example.com', Role: 'Analyst', Designation: 'Data Analyst', Experience: '2 years' },</span></code></li><li class="L4"><code class="language-html"><span class="pln">];</span></code></li><li class="L5"><code class="language-html"></code></li><li class="L6"><code class="language-html"><span class="pln">const employee = employees.find((e) =&gt; e.id === 2);</span></code></li><li class="L7"><code class="language-html"><span class="pln">console.log(`Details of the employee\nname: ${employee.name}\nEid: ${employee.Eid}\nContact details: ${employee['Contact details']}\nRole: ${employee.Role}\nDesignation: ${employee.Designation}\nExperience: ${employee.Experience}`);</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="rahidx">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-19">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="sfrde7">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-19">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+    
+<tr>
+<td><b>2D Array</b></td>
+<td>
+A 2D array can be created by initializing an array of arrays.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ol><ol class="linenums"><li class="L0"><code class="language-html"><span class="pln">const grid = [</span></code></li><li class="L1"><code class="language-html"><span class="pln">    [1, 2, 3],</span></code></li><li class="L2"><code class="language-html"><span class="pln">    [4, 5, 6],</span></code></li><li class="L3"><code class="language-html"><span class="pln">    [7, 8, 9]</span></code></li><li class="L4"><code class="language-html"><span class="pln">];</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="3viod">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-20">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="a0nyub">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-20">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+    
+<tr>
+<td><b>Access 2D Array</b></td>
+<td>
+To access a specific element in a 2D array, you need to provide both row and column indices.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ol><ol class="linenums"><li class="L0"><code class="language-html"><span class="pln">for (let i = 0; i &lt; grid.length; i++) {</span></code></li><li class="L1"><code class="language-html"><span class="pln">    for (let j = 0; j &lt; grid[i].length; j++) {</span></code></li><li class="L2"><code class="language-html"><span class="pln">        console.log(`Element at (${i}, ${j}): ${grid[i][j]}`);</span></code></li><li class="L3"><code class="language-html"><span class="pln">    }</span></code></li><li class="L4"><code class="language-html"><span class="pln">}</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="dbisf9">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-21">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="m4tne">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-21">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+    
+<tr>
+<td><b>2D array to book seat</b></td>
+<td>
+You can create a booking system using 2D array.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li>16</li><li>17</li><li>18</li><li>19</li><li>20</li><li>21</li><li>22</li><li>23</li><li>24</li><li>25</li><li>26</li><li>27</li><li>28</li><li>29</li><li>30</li><li>31</li><li>32</li><li>33</li><li>34</li><li>35</li><li>36</li><li>37</li><li>38</li><li>39</li><li>40</li><li>41</li><li>42</li><li>43</li><li>44</li><li>45</li><li>46</li><li>47</li><li>48</li><li>49</li><li>50</li><li>51</li><li>52</li><li>53</li><li>54</li><li>55</li><li>56</li><li>57</li><li>58</li><li>59</li><li>60</li><li>61</li><li>62</li><li>63</li><li>64</li><li>65</li><li>66</li><li>67</li><li>68</li><li>69</li><li>70</li><li>71</li><li>72</li><li>73</li><li>74</li><li>75</li><li>76</li><li>77</li><li>78</li><li>79</li><li>80</li><li>81</li><li>82</li><li>83</li><li>84</li><li>85</li><li>86</li><li>87</li><li>88</li><li>89</li><li>90</li><li>91</li><li>92</li><li>93</li><li>94</li><li>95</li><li>96</li><li>97</li><li>98</li><li>99</li><li>100</li><li>101</li><li>102</li><li>103</li><li>104</li><li>105</li></ol><ol class="linenums"><li class="L0"><code class="language-javascript"><span class="pun">&lt;!</span><span class="pln">DOCTYPE html</span><span class="pun">&gt;</span></code></li><li class="L1"><code class="language-javascript"><span class="pun">&lt;</span><span class="pln">html</span><span class="pun">&gt;</span></code></li><li class="L2"><code class="language-javascript"><span class="pun">&lt;</span><span class="pln">head</span><span class="pun">&gt;</span></code></li><li class="L3"><code class="language-javascript"><span class="pln">    </span><span class="pun">&lt;</span><span class="pln">style</span><span class="pun">&gt;</span></code></li><li class="L4"><code class="language-javascript"><span class="pln">        </span><span class="com">/* CSS for styling the seats */</span></code></li><li class="L5"><code class="language-javascript"><span class="pln">        </span><span class="pun">.</span><span class="pln">seating</span><span class="pun">-</span><span class="pln">chart </span><span class="pun">{</span></code></li><li class="L6"><code class="language-javascript"><span class="pln">            display</span><span class="pun">:</span><span class="pln"> grid</span><span class="pun">;</span></code></li><li class="L7"><code class="language-javascript"><span class="pln">            grid</span><span class="pun">-</span><span class="pln">template</span><span class="pun">-</span><span class="pln">columns</span><span class="pun">:</span><span class="pln"> repeat</span><span class="pun">(</span><span class="lit">3</span><span class="pun">,</span><span class="pln"> </span><span class="lit">70px</span><span class="pun">);</span></code></li><li class="L8"><code class="language-javascript"><span class="pln">            gap</span><span class="pun">:</span><span class="pln"> </span><span class="lit">10px</span><span class="pun">;</span></code></li><li class="L9"><code class="language-javascript"><span class="pln">            justify</span><span class="pun">-</span><span class="pln">content</span><span class="pun">:</span><span class="pln"> center</span><span class="pun">;</span></code></li><li class="L0"><code class="language-javascript"><span class="pln">        </span><span class="pun">}</span></code></li><li class="L1"><code class="language-javascript"></code></li><li class="L2"><code class="language-javascript"><span class="pln">        </span><span class="pun">.</span><span class="pln">seat </span><span class="pun">{</span></code></li><li class="L3"><code class="language-javascript"><span class="pln">            width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">70px</span><span class="pun">;</span></code></li><li class="L4"><code class="language-javascript"><span class="pln">            height</span><span class="pun">:</span><span class="pln"> </span><span class="lit">40px</span><span class="pun">;</span></code></li><li class="L5"><code class="language-javascript"><span class="pln">            text</span><span class="pun">-</span><span class="pln">align</span><span class="pun">:</span><span class="pln"> center</span><span class="pun">;</span></code></li><li class="L6"><code class="language-javascript"><span class="pln">            line</span><span class="pun">-</span><span class="pln">height</span><span class="pun">:</span><span class="pln"> </span><span class="lit">40px</span><span class="pun">;</span></code></li><li class="L7"><code class="language-javascript"><span class="pln">            border</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1px</span><span class="pln"> solid </span><span class="pun">#</span><span class="pln">ccc</span><span class="pun">;</span></code></li><li class="L8"><code class="language-javascript"><span class="pln">            cursor</span><span class="pun">:</span><span class="pln"> pointer</span><span class="pun">;</span></code></li><li class="L9"><code class="language-javascript"><span class="pln">        </span><span class="pun">}</span></code></li><li class="L0"><code class="language-javascript"></code></li><li class="L1"><code class="language-javascript"><span class="pln">        </span><span class="pun">.</span><span class="pln">booked </span><span class="pun">{</span></code></li><li class="L2"><code class="language-javascript"><span class="pln">            background</span><span class="pun">-</span><span class="pln">color</span><span class="pun">:</span><span class="pln"> </span><span class="pun">#</span><span class="pln">FF0000</span><span class="pun">;</span><span class="pln"> </span><span class="com">/* Red */</span></code></li><li class="L3"><code class="language-javascript"><span class="pln">            cursor</span><span class="pun">:</span><span class="pln"> not</span><span class="pun">-</span><span class="pln">allowed</span><span class="pun">;</span></code></li><li class="L4"><code class="language-javascript"><span class="pln">            color</span><span class="pun">:</span><span class="pln"> white</span><span class="pun">;</span><span class="pln"> </span><span class="com">/* Set the text color to white for booked seats */</span></code></li><li class="L5"><code class="language-javascript"><span class="pln">        </span><span class="pun">}</span></code></li><li class="L6"><code class="language-javascript"></code></li><li class="L7"><code class="language-javascript"><span class="pln">        </span><span class="pun">.</span><span class="pln">available </span><span class="pun">{</span></code></li><li class="L8"><code class="language-javascript"><span class="pln">            background</span><span class="pun">-</span><span class="pln">color</span><span class="pun">:</span><span class="pln"> </span><span class="pun">#</span><span class="lit">7FFF00</span><span class="pun">;</span><span class="pln"> </span><span class="com">/* Light Green */</span></code></li><li class="L9"><code class="language-javascript"><span class="pln">        </span><span class="pun">}</span></code></li><li class="L0"><code class="language-javascript"></code></li><li class="L1"><code class="language-javascript"><span class="pln">        </span><span class="pun">.</span><span class="pln">select</span><span class="pun">-</span><span class="pln">button </span><span class="pun">{</span></code></li><li class="L2"><code class="language-javascript"><span class="pln">            width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">100</span><span class="pun">%;</span></code></li><li class="L3"><code class="language-javascript"><span class="pln">            padding</span><span class="pun">:</span><span class="pln"> </span><span class="lit">10px</span><span class="pun">;</span></code></li><li class="L4"><code class="language-javascript"><span class="pln">            margin</span><span class="pun">:</span><span class="pln"> </span><span class="lit">10px</span><span class="pun">;</span></code></li><li class="L5"><code class="language-javascript"><span class="pln">            background</span><span class="pun">-</span><span class="pln">color</span><span class="pun">:</span><span class="pln"> </span><span class="pun">#</span><span class="lit">007BFF</span><span class="pun">;</span><span class="pln"> </span><span class="com">/* Blue */</span></code></li><li class="L6"><code class="language-javascript"><span class="pln">            color</span><span class="pun">:</span><span class="pln"> white</span><span class="pun">;</span></code></li><li class="L7"><code class="language-javascript"><span class="pln">            border</span><span class="pun">:</span><span class="pln"> none</span><span class="pun">;</span></code></li><li class="L8"><code class="language-javascript"><span class="pln">            cursor</span><span class="pun">:</span><span class="pln"> pointer</span><span class="pun">;</span></code></li><li class="L9"><code class="language-javascript"><span class="pln">        </span><span class="pun">}</span></code></li><li class="L0"><code class="language-javascript"><span class="pln">    </span><span class="pun">&lt;/</span><span class="pln">style</span><span class="pun">&gt;</span></code></li><li class="L1"><code class="language-javascript"><span class="pun">&lt;/</span><span class="pln">head</span><span class="pun">&gt;</span></code></li><li class="L2"><code class="language-javascript"><span class="pun">&lt;</span><span class="pln">body</span><span class="pun">&gt;</span></code></li><li class="L3"><code class="language-javascript"><span class="pln">    </span><span class="pun">&lt;</span><span class="pln">h2</span><span class="pun">&gt;</span><span class="typ">Movie</span><span class="pln"> </span><span class="typ">Theater</span><span class="pln"> </span><span class="typ">Seating</span><span class="pun">&lt;/</span><span class="pln">h2</span><span class="pun">&gt;</span></code></li><li class="L4"><code class="language-javascript"><span class="pln">    </span><span class="pun">&lt;</span><span class="pln">div id</span><span class="pun">=</span><span class="str">"seating-chart"</span><span class="pln"> </span><span class="kwd">class</span><span class="pun">=</span><span class="str">"seating-chart"</span><span class="pun">&gt;</span></code></li><li class="L5"><code class="language-javascript"><span class="pln">        </span><span class="pun">&lt;</span><span class="pln">div </span><span class="kwd">class</span><span class="pun">=</span><span class="str">"seat available"</span><span class="pln"> onclick</span><span class="pun">=</span><span class="str">"bookSeat(0, 0)"</span><span class="pun">&gt;</span><span class="pln">A1</span><span class="pun">&lt;/</span><span class="pln">div</span><span class="pun">&gt;</span></code></li><li class="L6"><code class="language-javascript"><span class="pln">        </span><span class="pun">&lt;</span><span class="pln">div </span><span class="kwd">class</span><span class="pun">=</span><span class="str">"seat available"</span><span class="pln"> onclick</span><span class="pun">=</span><span class="str">"bookSeat(0, 1)"</span><span class="pun">&gt;</span><span class="pln">A2</span><span class="pun">&lt;/</span><span class="pln">div</span><span class="pun">&gt;</span></code></li><li class="L7"><code class="language-javascript"><span class="pln">        </span><span class="pun">&lt;</span><span class="pln">div </span><span class="kwd">class</span><span class="pun">=</span><span class="str">"seat available"</span><span class="pln"> onclick</span><span class="pun">=</span><span class="str">"bookSeat(0, 2)"</span><span class="pun">&gt;</span><span class="pln">A3</span><span class="pun">&lt;/</span><span class="pln">div</span><span class="pun">&gt;</span></code></li><li class="L8"><code class="language-javascript"><span class="pln">        </span><span class="pun">&lt;</span><span class="pln">div </span><span class="kwd">class</span><span class="pun">=</span><span class="str">"seat available"</span><span class="pln"> onclick</span><span class="pun">=</span><span class="str">"bookSeat(1, 0)"</span><span class="pun">&gt;</span><span class="pln">B1</span><span class="pun">&lt;/</span><span class="pln">div</span><span class="pun">&gt;</span></code></li><li class="L9"><code class="language-javascript"><span class="pln">        </span><span class="pun">&lt;</span><span class="pln">div </span><span class="kwd">class</span><span class="pun">=</span><span class="str">"seat available"</span><span class="pln"> onclick</span><span class="pun">=</span><span class="str">"bookSeat(1, 1)"</span><span class="pun">&gt;</span><span class="pln">B2</span><span class="pun">&lt;/</span><span class="pln">div</span><span class="pun">&gt;</span></code></li><li class="L0"><code class="language-javascript"><span class="pln">        </span><span class="pun">&lt;</span><span class="pln">div </span><span class="kwd">class</span><span class="pun">=</span><span class="str">"seat available"</span><span class="pln"> onclick</span><span class="pun">=</span><span class="str">"bookSeat(1, 2)"</span><span class="pun">&gt;</span><span class="pln">B3</span><span class="pun">&lt;/</span><span class="pln">div</span><span class="pun">&gt;</span></code></li><li class="L1"><code class="language-javascript"><span class="pln">        </span><span class="pun">&lt;</span><span class="pln">div </span><span class="kwd">class</span><span class="pun">=</span><span class="str">"seat available"</span><span class="pln"> onclick</span><span class="pun">=</span><span class="str">"bookSeat(2, 0)"</span><span class="pun">&gt;</span><span class="pln">C1</span><span class="pun">&lt;/</span><span class="pln">div</span><span class="pun">&gt;</span></code></li><li class="L2"><code class="language-javascript"><span class="pln">        </span><span class="pun">&lt;</span><span class="pln">div </span><span class="kwd">class</span><span class="pun">=</span><span class="str">"seat available"</span><span class="pln"> onclick</span><span class="pun">=</span><span class="str">"bookSeat(2, 1)"</span><span class="pun">&gt;</span><span class="pln">C2</span><span class="pun">&lt;/</span><span class="pln">div</span><span class="pun">&gt;</span></code></li><li class="L3"><code class="language-javascript"><span class="pln">        </span><span class="pun">&lt;</span><span class="pln">div </span><span class="kwd">class</span><span class="pun">=</span><span class="str">"seat available"</span><span class="pln"> onclick</span><span class="pun">=</span><span class="str">"bookSeat(2, 2)"</span><span class="pun">&gt;</span><span class="pln">C3</span><span class="pun">&lt;/</span><span class="pln">div</span><span class="pun">&gt;</span></code></li><li class="L4"><code class="language-javascript"><span class="pln">    </span><span class="pun">&lt;/</span><span class="pln">div</span><span class="pun">&gt;</span></code></li><li class="L5"><code class="language-javascript"></code></li><li class="L6"><code class="language-javascript"><span class="pln">    </span><span class="pun">&lt;</span><span class="pln">button </span><span class="kwd">class</span><span class="pun">=</span><span class="str">"select-button"</span><span class="pln"> onclick</span><span class="pun">=</span><span class="str">"bookRandomSeat()"</span><span class="pun">&gt;</span><span class="typ">Select</span><span class="pln"> </span><span class="typ">Random</span><span class="pln"> </span><span class="typ">Seat</span><span class="pun">&lt;/</span><span class="pln">button</span><span class="pun">&gt;</span></code></li><li class="L7"><code class="language-javascript"></code></li><li class="L8"><code class="language-javascript"><span class="pln">    </span><span class="pun">&lt;</span><span class="pln">script</span><span class="pun">&gt;</span></code></li><li class="L9"><code class="language-javascript"><span class="pln">        </span><span class="com">// JavaScript for booking seats</span></code></li><li class="L0"><code class="language-javascript"><span class="pln">        </span><span class="kwd">const</span><span class="pln"> theaterSeats </span><span class="pun">=</span><span class="pln"> </span><span class="pun">[</span></code></li><li class="L1"><code class="language-javascript"><span class="pln">            </span><span class="pun">[</span><span class="str">'X'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'O'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'X'</span><span class="pun">],</span></code></li><li class="L2"><code class="language-javascript"><span class="pln">            </span><span class="pun">[</span><span class="str">'O'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'X'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'O'</span><span class="pun">],</span></code></li><li class="L3"><code class="language-javascript"><span class="pln">            </span><span class="pun">[</span><span class="str">'X'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'O'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'X'</span><span class="pun">]</span></code></li><li class="L4"><code class="language-javascript"><span class="pln">        </span><span class="pun">];</span></code></li><li class="L5"><code class="language-javascript"></code></li><li class="L6"><code class="language-javascript"><span class="pln">        </span><span class="kwd">function</span><span class="pln"> bookSeat</span><span class="pun">(</span><span class="pln">row</span><span class="pun">,</span><span class="pln"> col</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></code></li><li class="L7"><code class="language-javascript"><span class="pln">            </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">theaterSeats</span><span class="pun">[</span><span class="pln">row</span><span class="pun">][</span><span class="pln">col</span><span class="pun">]</span><span class="pln"> </span><span class="pun">===</span><span class="pln"> </span><span class="str">'O'</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></code></li><li class="L8"><code class="language-javascript"><span class="pln">                theaterSeats</span><span class="pun">[</span><span class="pln">row</span><span class="pun">][</span><span class="pln">col</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="str">'X'</span><span class="pun">;</span></code></li><li class="L9"><code class="language-javascript"><span class="pln">                updateSeatStatus</span><span class="pun">(</span><span class="pln">row</span><span class="pun">,</span><span class="pln"> col</span><span class="pun">,</span><span class="pln"> </span><span class="str">'booked'</span><span class="pun">);</span></code></li><li class="L0"><code class="language-javascript"><span class="pln">                alert</span><span class="pun">(`</span><span class="typ">Seat</span><span class="pln"> $</span><span class="pun">{</span><span class="typ">String</span><span class="pun">.</span><span class="pln">fromCharCode</span><span class="pun">(</span><span class="lit">65</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> row</span><span class="pun">)}</span><span class="pln">$</span><span class="pun">{</span><span class="pln">col </span><span class="pun">+</span><span class="pln"> </span><span class="lit">1</span><span class="pun">}</span><span class="pln"> is booked</span><span class="pun">.`);</span></code></li><li class="L1"><code class="language-javascript"><span class="pln">            </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">else</span><span class="pln"> </span><span class="pun">{</span></code></li><li class="L2"><code class="language-javascript"><span class="pln">                alert</span><span class="pun">(`</span><span class="typ">Seat</span><span class="pln"> $</span><span class="pun">{</span><span class="typ">String</span><span class="pun">.</span><span class="pln">fromCharCode</span><span class="pun">(</span><span class="lit">65</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> row</span><span class="pun">)}</span><span class="pln">$</span><span class="pun">{</span><span class="pln">col </span><span class="pun">+</span><span class="pln"> </span><span class="lit">1</span><span class="pun">}</span><span class="pln"> is already taken</span><span class="pun">.`);</span></code></li><li class="L3"><code class="language-javascript"><span class="pln">            </span><span class="pun">}</span></code></li><li class="L4"><code class="language-javascript"><span class="pln">        </span><span class="pun">}</span></code></li><li class="L5"><code class="language-javascript"></code></li><li class="L6"><code class="language-javascript"><span class="pln">        </span><span class="kwd">function</span><span class="pln"> updateSeatStatus</span><span class="pun">(</span><span class="pln">row</span><span class="pun">,</span><span class="pln"> col</span><span class="pun">,</span><span class="pln"> status</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></code></li><li class="L7"><code class="language-javascript"><span class="pln">            </span><span class="kwd">const</span><span class="pln"> seats </span><span class="pun">=</span><span class="pln"> document</span><span class="pun">.</span><span class="pln">getElementsByClassName</span><span class="pun">(</span><span class="str">'seat'</span><span class="pun">);</span></code></li><li class="L8"><code class="language-javascript"><span class="pln">            </span><span class="kwd">const</span><span class="pln"> index </span><span class="pun">=</span><span class="pln"> row </span><span class="pun">*</span><span class="pln"> </span><span class="lit">3</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> col</span><span class="pun">;</span></code></li><li class="L9"><code class="language-javascript"><span class="pln">            seats</span><span class="pun">[</span><span class="pln">index</span><span class="pun">].</span><span class="pln">classList</span><span class="pun">.</span><span class="pln">remove</span><span class="pun">(</span><span class="str">'available'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'booked'</span><span class="pun">);</span></code></li><li class="L0"><code class="language-javascript"><span class="pln">            seats</span><span class="pun">[</span><span class="pln">index</span><span class="pun">].</span><span class="pln">classList</span><span class="pun">.</span><span class="pln">add</span><span class="pun">(</span><span class="pln">status</span><span class="pun">);</span></code></li><li class="L1"><code class="language-javascript"><span class="pln">        </span><span class="pun">}</span></code></li><li class="L2"><code class="language-javascript"></code></li><li class="L3"><code class="language-javascript"><span class="pln">        </span><span class="kwd">function</span><span class="pln"> bookRandomSeat</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span></code></li><li class="L4"><code class="language-javascript"><span class="pln">            </span><span class="kwd">const</span><span class="pln"> availableSeats </span><span class="pun">=</span><span class="pln"> </span><span class="pun">[];</span></code></li><li class="L5"><code class="language-javascript"></code></li><li class="L6"><code class="language-javascript"><span class="pln">            </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="pln">let row </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln"> row </span><span class="pun">&lt;</span><span class="pln"> theaterSeats</span><span class="pun">.</span><span class="pln">length</span><span class="pun">;</span><span class="pln"> row</span><span class="pun">++)</span><span class="pln"> </span><span class="pun">{</span></code></li><li class="L7"><code class="language-javascript"><span class="pln">                </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="pln">let col </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln"> col </span><span class="pun">&lt;</span><span class="pln"> theaterSeats</span><span class="pun">[</span><span class="pln">row</span><span class="pun">].</span><span class="pln">length</span><span class="pun">;</span><span class="pln"> col</span><span class="pun">++)</span><span class="pln"> </span><span class="pun">{</span></code></li><li class="L8"><code class="language-javascript"><span class="pln">                    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">theaterSeats</span><span class="pun">[</span><span class="pln">row</span><span class="pun">][</span><span class="pln">col</span><span class="pun">]</span><span class="pln"> </span><span class="pun">===</span><span class="pln"> </span><span class="str">'O'</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></code></li><li class="L9"><code class="language-javascript"><span class="pln">                        availableSeats</span><span class="pun">.</span><span class="pln">push</span><span class="pun">({</span><span class="pln"> row</span><span class="pun">,</span><span class="pln"> col </span><span class="pun">});</span></code></li><li class="L0"><code class="language-javascript"><span class="pln">                    </span><span class="pun">}</span></code></li><li class="L1"><code class="language-javascript"><span class="pln">                </span><span class="pun">}</span></code></li><li class="L2"><code class="language-javascript"><span class="pln">            </span><span class="pun">}</span></code></li><li class="L3"><code class="language-javascript"></code></li><li class="L4"><code class="language-javascript"><span class="pln">            </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">availableSeats</span><span class="pun">.</span><span class="pln">length </span><span class="pun">&gt;</span><span class="pln"> </span><span class="lit">0</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></code></li><li class="L5"><code class="language-javascript"><span class="pln">                </span><span class="kwd">const</span><span class="pln"> randomIndex </span><span class="pun">=</span><span class="pln"> </span><span class="typ">Math</span><span class="pun">.</span><span class="pln">floor</span><span class="pun">(</span><span class="typ">Math</span><span class="pun">.</span><span class="pln">random</span><span class="pun">()</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> availableSeats</span><span class="pun">.</span><span class="pln">length</span><span class="pun">);</span></code></li><li class="L6"><code class="language-javascript"><span class="pln">                </span><span class="kwd">const</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> row</span><span class="pun">,</span><span class="pln"> col </span><span class="pun">}</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> availableSeats</span><span class="pun">[</span><span class="pln">randomIndex</span><span class="pun">];</span></code></li><li class="L7"><code class="language-javascript"><span class="pln">                bookSeat</span><span class="pun">(</span><span class="pln">row</span><span class="pun">,</span><span class="pln"> col</span><span class="pun">);</span></code></li><li class="L8"><code class="language-javascript"><span class="pln">            </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">else</span><span class="pln"> </span><span class="pun">{</span></code></li><li class="L9"><code class="language-javascript"><span class="pln">                alert</span><span class="pun">(</span><span class="str">'All seats are already booked.'</span><span class="pun">);</span></code></li><li class="L0"><code class="language-javascript"><span class="pln">            </span><span class="pun">}</span></code></li><li class="L1"><code class="language-javascript"><span class="pln">        </span><span class="pun">}</span></code></li><li class="L2"><code class="language-javascript"><span class="pln">    </span><span class="pun">&lt;/</span><span class="pln">script</span><span class="pun">&gt;</span></code></li><li class="L3"><code class="language-javascript"><span class="pun">&lt;/</span><span class="pln">body</span><span class="pun">&gt;</span></code></li><li class="L4"><code class="language-javascript"><span class="pun">&lt;/</span><span class="pln">html</span><span class="pun">&gt;</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="bvkv15">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-22">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="zrl4o7">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-22">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+    
+<tr>
+<td><b>Classes</b></td>
+<td>
+Classes are a way to create blueprint or templates for objects. They define the structure and behavior of objects of that class. 
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li><li>11</li><li>12</li><li>13</li><li>14</li></ol><ol class="linenums"><li class="L0"><code class="language-javascript"><span class="kwd">class</span><span class="pln"> </span><span class="typ">Person</span><span class="pln"> </span><span class="pun">{</span></code></li><li class="L1"><code class="language-javascript"><span class="pln">  constructor</span><span class="pun">(</span><span class="pln">firstName</span><span class="pun">,</span><span class="pln"> lastName</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></code></li><li class="L2"><code class="language-javascript"><span class="pln">    </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">firstName </span><span class="pun">=</span><span class="pln"> firstName</span><span class="pun">;</span></code></li><li class="L3"><code class="language-javascript"><span class="pln">    </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">lastName </span><span class="pun">=</span><span class="pln"> lastName</span><span class="pun">;</span></code></li><li class="L4"><code class="language-javascript"><span class="pln">  </span><span class="pun">}</span></code></li><li class="L5"><code class="language-javascript"></code></li><li class="L6"><code class="language-javascript"><span class="pln">  getFullName</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span></code></li><li class="L7"><code class="language-javascript"><span class="pln">    </span><span class="kwd">return</span><span class="pln"> </span><span class="pun">`</span><span class="pln">$</span><span class="pun">{</span><span class="kwd">this</span><span class="pun">.</span><span class="pln">firstName</span><span class="pun">}</span><span class="pln"> $</span><span class="pun">{</span><span class="kwd">this</span><span class="pun">.</span><span class="pln">lastName</span><span class="pun">}`;</span></code></li><li class="L8"><code class="language-javascript"><span class="pln">  </span><span class="pun">}</span></code></li><li class="L9"><code class="language-javascript"><span class="pun">}</span></code></li><li class="L0"><code class="language-javascript"></code></li><li class="L1"><code class="language-javascript"><span class="com">// Creating an instance of the Person class</span></code></li><li class="L2"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> person1 </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Person</span><span class="pun">(</span><span class="str">"John"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"Doe"</span><span class="pun">);</span></code></li><li class="L3"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">person1</span><span class="pun">.</span><span class="pln">getFullName</span><span class="pun">());</span><span class="pln"> </span><span class="com">// Output: "John Doe"</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="8xcvoo">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-23">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="ipalyn">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-23">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+<tr>
+<td><b>Constructor Objects</b></td>
+<td>
+Objects are instances of classes or can be created as standalone objects without a class. They can have properties and methods.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li><li>11</li><li>12</li><li>13</li><li>14</li></ol><ol class="linenums"><li class="L0"><code class="language-html"><span class="pln">class Car {</span></code></li><li class="L1"><code class="language-html"><span class="pln">  constructor(make, model, year) {</span></code></li><li class="L2"><code class="language-html"><span class="pln">    this.make = make;</span></code></li><li class="L3"><code class="language-html"><span class="pln">    this.model = model;</span></code></li><li class="L4"><code class="language-html"><span class="pln">    this.year = year;</span></code></li><li class="L5"><code class="language-html"><span class="pln">  }</span></code></li><li class="L6"><code class="language-html"></code></li><li class="L7"><code class="language-html"><span class="pln">  startEngine() {</span></code></li><li class="L8"><code class="language-html"><span class="pln">    console.log(`The ${this.make} ${this.model}'s engine is running.`);</span></code></li><li class="L9"><code class="language-html"><span class="pln">  }</span></code></li><li class="L0"><code class="language-html"><span class="pln">}</span></code></li><li class="L1"><code class="language-html"></code></li><li class="L2"><code class="language-html"><span class="pln">const myCar = new Car("Toyota", "Camry", 2022);</span></code></li><li class="L3"><code class="language-html"><span class="pln">myCar.startEngine(); // Output: "The Toyota Camry's engine is running."</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="iemqxx">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-24">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="rc1uba">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-24">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+<tr>
+<td><b>Object Literals</b></td>
+<td>
+Object literals are a way to create ad-hoc objects without defining a class.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li></ol><ol class="linenums"><li class="L0"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> person </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span></code></li><li class="L1"><code class="language-javascript"><span class="pln">  firstName</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Alice"</span><span class="pun">,</span></code></li><li class="L2"><code class="language-javascript"><span class="pln">  lastName</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Johnson"</span><span class="pun">,</span></code></li><li class="L3"><code class="language-javascript"><span class="pln">  getFullName</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span></code></li><li class="L4"><code class="language-javascript"><span class="pln">    </span><span class="kwd">return</span><span class="pln"> </span><span class="pun">`</span><span class="pln">$</span><span class="pun">{</span><span class="kwd">this</span><span class="pun">.</span><span class="pln">firstName</span><span class="pun">}</span><span class="pln"> $</span><span class="pun">{</span><span class="kwd">this</span><span class="pun">.</span><span class="pln">lastName</span><span class="pun">}`;</span></code></li><li class="L5"><code class="language-javascript"><span class="pln">  </span><span class="pun">}</span></code></li><li class="L6"><code class="language-javascript"><span class="pun">};</span></code></li><li class="L7"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">person</span><span class="pun">.</span><span class="pln">getFullName</span><span class="pun">());</span><span class="pln"> </span><span class="com">// Output: "Alice Johnson"</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="04u1il">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-25">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="qkj9ooe">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-25">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+<tr>
+<td><b>Function Constructor</b></td>
+<td>
+A function constructor is a regular JavaScript function that is used to create and initialize objects. It's a convention to name function constructors with an initial capital letter.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li></ol><ol class="linenums"><li class="L0"><code class="language-javascript"><span class="kwd">function</span><span class="pln"> </span><span class="typ">Car</span><span class="pun">(</span><span class="pln">make</span><span class="pun">,</span><span class="pln"> model</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></code></li><li class="L1"><code class="language-javascript"><span class="pln">  </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">make </span><span class="pun">=</span><span class="pln"> make</span><span class="pun">;</span></code></li><li class="L2"><code class="language-javascript"><span class="pln">  </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">model </span><span class="pun">=</span><span class="pln"> model</span><span class="pun">;</span></code></li><li class="L3"><code class="language-javascript"><span class="pun">}</span></code></li><li class="L4"><code class="language-javascript"></code></li><li class="L5"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> car1 </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Car</span><span class="pun">(</span><span class="str">"Toyota"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"Camry"</span><span class="pun">);</span></code></li><li class="L6"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> car2 </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Car</span><span class="pun">(</span><span class="str">"Honda"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"Civic"</span><span class="pun">);</span></code></li><li class="L7"><code class="language-javascript"></code></li><li class="L8"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="str">'Car1 details are'</span><span class="pun">,</span><span class="pln"> car1</span><span class="pun">);</span></code></li><li class="L9"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="str">'Car2 details are'</span><span class="pun">,</span><span class="pln"> car2</span><span class="pun">);</span><span class="pln"> </span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="sq5qsm">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-26">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="zkbid3">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-26">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+<tr>
+<td><b>. (Dot) Notation</b></td>
+<td>
+Dot notation is a way to access object properties.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li></ol><ol class="linenums"><li class="L0"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> person </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span></code></li><li class="L1"><code class="language-javascript"><span class="pln">  firstName</span><span class="pun">:</span><span class="pln"> </span><span class="str">"John"</span><span class="pun">,</span></code></li><li class="L2"><code class="language-javascript"><span class="pln">  lastName</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Doe"</span><span class="pun">,</span></code></li><li class="L3"><code class="language-javascript"><span class="pln">  age</span><span class="pun">:</span><span class="pln"> </span><span class="lit">30</span></code></li><li class="L4"><code class="language-javascript"><span class="pun">};</span></code></li><li class="L5"><code class="language-javascript"></code></li><li class="L6"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">person</span><span class="pun">.</span><span class="pln">firstName</span><span class="pun">);</span><span class="pln"> </span><span class="com">// Output: "John"</span></code></li><li class="L7"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">person</span><span class="pun">.</span><span class="pln">lastName</span><span class="pun">);</span><span class="pln">  </span><span class="com">// Output: "Doe"</span></code></li><li class="L8"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">person</span><span class="pun">.</span><span class="pln">age</span><span class="pun">);</span><span class="pln">       </span><span class="com">// Output: 30</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="htomaa">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-27">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="69pe1a">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-27">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+    
+<tr>
+<td><b>Bracket Notation</b></td>
+<td>
+Bracket notation is a way to access object properties, especially useful when property names contain special characters or spaces.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li></ol><ol class="linenums"><li class="L0"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> person </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span></code></li><li class="L1"><code class="language-javascript"><span class="pln">  </span><span class="str">"first name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"John"</span><span class="pun">,</span></code></li><li class="L2"><code class="language-javascript"><span class="pln">  </span><span class="str">"last name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Doe"</span><span class="pun">,</span></code></li><li class="L3"><code class="language-javascript"><span class="pln">  age</span><span class="pun">:</span><span class="pln"> </span><span class="lit">30</span></code></li><li class="L4"><code class="language-javascript"><span class="pun">};</span></code></li><li class="L5"><code class="language-javascript"></code></li><li class="L6"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">person</span><span class="pun">[</span><span class="str">"first name"</span><span class="pun">]);</span><span class="pln"> </span><span class="com">// Output: "John"</span></code></li><li class="L7"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">person</span><span class="pun">[</span><span class="str">"last name"</span><span class="pun">]);</span><span class="pln">  </span><span class="com">// Output: "Doe"</span></code></li><li class="L8"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">person</span><span class="pun">[</span><span class="str">"age"</span><span class="pun">]);</span><span class="pln">        </span><span class="com">// Output: 30</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="7r1mdp">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-28">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="7exp0p">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-28">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+    
+<tr>
+<td><b>Arrays of Objects</b></td>
+<td>
+An array of objects in JavaScript is a collection of multiple objects stored within a single array container.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ol><ol class="linenums"><li class="L0"><code class="language-html"><span class="pln">const students = [</span></code></li><li class="L1"><code class="language-html"><span class="pln">  { name: "Alice", age: 25 },</span></code></li><li class="L2"><code class="language-html"><span class="pln">  { name: "Bob", age: 22 },</span></code></li><li class="L3"><code class="language-html"><span class="pln">  { name: "Charlie", age: 28 }</span></code></li><li class="L4"><code class="language-html"><span class="pln">];</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="fbyppn">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-29">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="02zkoc">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-29">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+<tr>
+<td><b>Access Array of Objects</b></td>
+<td>
+You can access elements within an array of objects using the array index and using dot notation.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li></ol><ol class="linenums"><li class="L0"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> students </span><span class="pun">=</span><span class="pln"> </span><span class="pun">[</span></code></li><li class="L1"><code class="language-javascript"><span class="pln">  </span><span class="pun">{</span><span class="pln"> name</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Alice"</span><span class="pun">,</span><span class="pln"> age</span><span class="pun">:</span><span class="pln"> </span><span class="lit">25</span><span class="pln"> </span><span class="pun">},</span></code></li><li class="L2"><code class="language-javascript"><span class="pln">  </span><span class="pun">{</span><span class="pln"> name</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Bob"</span><span class="pun">,</span><span class="pln"> age</span><span class="pun">:</span><span class="pln"> </span><span class="lit">22</span><span class="pln"> </span><span class="pun">},</span></code></li><li class="L3"><code class="language-javascript"><span class="pln">  </span><span class="pun">{</span><span class="pln"> name</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Charlie"</span><span class="pun">,</span><span class="pln"> age</span><span class="pun">:</span><span class="pln"> </span><span class="lit">28</span><span class="pln"> </span><span class="pun">}</span></code></li><li class="L4"><code class="language-javascript"><span class="pun">];</span></code></li><li class="L5"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">students</span><span class="pun">[</span><span class="lit">0</span><span class="pun">].</span><span class="pln">name</span><span class="pun">);</span><span class="pln"> </span><span class="com">// Output: "Alice"</span></code></li><li class="L6"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">students</span><span class="pun">[</span><span class="lit">2</span><span class="pun">].</span><span class="pln">age</span><span class="pun">);</span><span class="pln">  </span><span class="com">// Output: 28</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="7a49dj">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-30">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="q2rt3">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-30">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+
+<tr>
+<td><b>Iterating Through an Array of Objects</b></td>
+<td>
+Iteration of objects through arrays include for loops and array methods.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li></ol><ol class="linenums"><li class="L0"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> students </span><span class="pun">=</span><span class="pln"> </span><span class="pun">[</span></code></li><li class="L1"><code class="language-javascript"><span class="pln">  </span><span class="pun">{</span><span class="pln"> name</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Alice"</span><span class="pun">,</span><span class="pln"> age</span><span class="pun">:</span><span class="pln"> </span><span class="lit">25</span><span class="pln"> </span><span class="pun">},</span></code></li><li class="L2"><code class="language-javascript"><span class="pln">  </span><span class="pun">{</span><span class="pln"> name</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Bob"</span><span class="pun">,</span><span class="pln"> age</span><span class="pun">:</span><span class="pln"> </span><span class="lit">22</span><span class="pln"> </span><span class="pun">},</span></code></li><li class="L3"><code class="language-javascript"><span class="pln">  </span><span class="pun">{</span><span class="pln"> name</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Charlie"</span><span class="pun">,</span><span class="pln"> age</span><span class="pun">:</span><span class="pln"> </span><span class="lit">28</span><span class="pln"> </span><span class="pun">}</span></code></li><li class="L4"><code class="language-javascript"><span class="pun">];</span></code></li><li class="L5"><code class="language-javascript"><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="pln">let i </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln"> i </span><span class="pun">&lt;</span><span class="pln"> students</span><span class="pun">.</span><span class="pln">length</span><span class="pun">;</span><span class="pln"> i</span><span class="pun">++)</span><span class="pln"> </span><span class="pun">{</span></code></li><li class="L6"><code class="language-javascript"><span class="pln">  console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">students</span><span class="pun">[</span><span class="pln">i</span><span class="pun">].</span><span class="pln">name</span><span class="pun">);</span></code></li><li class="L7"><code class="language-javascript"><span class="pun">}</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="tqeptn">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-31">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="5rh3pb">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-31">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+    
+<tr>
+<td><b>Adding Objects</b></td>
+<td>
+You can add new objects to the array using the push method.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li></ol><ol class="linenums"><li class="L0"><code class="language-javascript"><span class="com">//Adding Elements</span></code></li><li class="L1"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> students </span><span class="pun">=</span><span class="pln"> </span><span class="pun">[</span></code></li><li class="L2"><code class="language-javascript"><span class="pln">  </span><span class="pun">{</span><span class="pln"> name</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Alice"</span><span class="pun">,</span><span class="pln"> age</span><span class="pun">:</span><span class="pln"> </span><span class="lit">25</span><span class="pln"> </span><span class="pun">},</span></code></li><li class="L3"><code class="language-javascript"><span class="pln">  </span><span class="pun">{</span><span class="pln"> name</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Bob"</span><span class="pun">,</span><span class="pln"> age</span><span class="pun">:</span><span class="pln"> </span><span class="lit">22</span><span class="pln"> </span><span class="pun">},</span></code></li><li class="L4"><code class="language-javascript"><span class="pln">  </span><span class="pun">{</span><span class="pln"> name</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Charlie"</span><span class="pun">,</span><span class="pln"> age</span><span class="pun">:</span><span class="pln"> </span><span class="lit">28</span><span class="pln"> </span><span class="pun">}</span></code></li><li class="L5"><code class="language-javascript"><span class="pun">];</span></code></li><li class="L6"><code class="language-javascript"></code></li><li class="L7"><code class="language-javascript"><span class="pln">students</span><span class="pun">.</span><span class="pln">push</span><span class="pun">({</span><span class="pln"> name</span><span class="pun">:</span><span class="pln"> </span><span class="str">"David"</span><span class="pun">,</span><span class="pln"> age</span><span class="pun">:</span><span class="pln"> </span><span class="lit">20</span><span class="pln"> </span><span class="pun">});</span><span class="pln">  </span><span class="com">// Add a new student</span></code></li><li class="L8"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="str">'After using push method '</span><span class="pun">);</span></code></li><li class="L9"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">students</span><span class="pun">);</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="13146b">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-32">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="6jrgl0a">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-32">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+    
+<tr>
+<td><b>Removing Objects</b></td>
+<td>
+You can remove objects using the pop method.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li></ol><ol class="linenums"><li class="L0"><code class="language-javascript"><span class="com">//Removing Elements</span></code></li><li class="L1"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> students </span><span class="pun">=</span><span class="pln"> </span><span class="pun">[</span></code></li><li class="L2"><code class="language-javascript"><span class="pln">  </span><span class="pun">{</span><span class="pln"> name</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Alice"</span><span class="pun">,</span><span class="pln"> age</span><span class="pun">:</span><span class="pln"> </span><span class="lit">25</span><span class="pln"> </span><span class="pun">},</span></code></li><li class="L3"><code class="language-javascript"><span class="pln">  </span><span class="pun">{</span><span class="pln"> name</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Bob"</span><span class="pun">,</span><span class="pln"> age</span><span class="pun">:</span><span class="pln"> </span><span class="lit">22</span><span class="pln"> </span><span class="pun">},</span></code></li><li class="L4"><code class="language-javascript"><span class="pln">  </span><span class="pun">{</span><span class="pln"> name</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Charlie"</span><span class="pun">,</span><span class="pln"> age</span><span class="pun">:</span><span class="pln"> </span><span class="lit">28</span><span class="pln"> </span><span class="pun">}</span></code></li><li class="L5"><code class="language-javascript"><span class="pun">];</span></code></li><li class="L6"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> removedStudent </span><span class="pun">=</span><span class="pln"> students</span><span class="pun">.</span><span class="pln">pop</span><span class="pun">();</span><span class="pln">      </span><span class="com">// Remove the last student</span></code></li><li class="L7"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="str">'After using pop method '</span><span class="pun">);</span></code></li><li class="L8"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">students</span><span class="pun">);</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="1zr7sg">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-33">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="o4ott">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-33">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+    
+<tr>
+<td><b>Filtering and Mapping Arrays of Objects</b></td>
+<td>
+You can filter and transform arrays of objects using array methods like filter and map.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li><li>11</li><li>12</li></ol><ol class="linenums"><li class="L0"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> students </span><span class="pun">=</span><span class="pln"> </span><span class="pun">[</span></code></li><li class="L1"><code class="language-javascript"><span class="pln">  </span><span class="pun">{</span><span class="pln"> name</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Alice"</span><span class="pun">,</span><span class="pln"> age</span><span class="pun">:</span><span class="pln"> </span><span class="lit">25</span><span class="pln"> </span><span class="pun">},</span></code></li><li class="L2"><code class="language-javascript"><span class="pln">  </span><span class="pun">{</span><span class="pln"> name</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Bob"</span><span class="pun">,</span><span class="pln"> age</span><span class="pun">:</span><span class="pln"> </span><span class="lit">22</span><span class="pln"> </span><span class="pun">},</span></code></li><li class="L3"><code class="language-javascript"><span class="pln">  </span><span class="pun">{</span><span class="pln"> name</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Charlie"</span><span class="pun">,</span><span class="pln"> age</span><span class="pun">:</span><span class="pln"> </span><span class="lit">28</span><span class="pln"> </span><span class="pun">}</span></code></li><li class="L4"><code class="language-javascript"><span class="pun">];</span></code></li><li class="L5"><code class="language-javascript"></code></li><li class="L6"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> adults </span><span class="pun">=</span><span class="pln"> students</span><span class="pun">.</span><span class="pln">filter</span><span class="pun">(</span><span class="pln">student </span><span class="pun">=&gt;</span><span class="pln"> student</span><span class="pun">.</span><span class="pln">age </span><span class="pun">&gt;=</span><span class="pln"> </span><span class="lit">23</span><span class="pun">);</span><span class="pln">  </span><span class="com">// Filter students who are 18 or olderconsole.log('After using push method ');</span></code></li><li class="L7"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> studentNames </span><span class="pun">=</span><span class="pln"> students</span><span class="pun">.</span><span class="pln">map</span><span class="pun">(</span><span class="pln">student </span><span class="pun">=&gt;</span><span class="pln"> student</span><span class="pun">.</span><span class="pln">name</span><span class="pun">);</span><span class="pln">   </span><span class="com">// Create an array of student names</span></code></li><li class="L8"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(‘</span><span class="typ">Using</span><span class="pln"> </span><span class="typ">Filter</span><span class="pln"> </span><span class="typ">Method</span><span class="pun">’);</span></code></li><li class="L9"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">adults</span><span class="pun">);</span></code></li><li class="L0"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(‘</span><span class="typ">Using</span><span class="pln"> </span><span class="typ">Map</span><span class="pln"> </span><span class="typ">Method</span><span class="pun">’</span></code></li><li class="L1"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">studentNames</span><span class="pun">);</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="ptfrxk">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-34">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="antcz">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-34">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+    
+<tr>
+<td><b>Mapping Arrays of Objects</b></td>
+<td>
+You can traverse and transform arrays of objects using array method like map.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li></ol><ol class="linenums"><li class="L0"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> employees </span><span class="pun">=</span><span class="pln"> </span><span class="pun">[</span></code></li><li class="L1"><code class="language-javascript"><span class="pln">  </span><span class="pun">{</span><span class="pln"> name</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Alice"</span><span class="pun">,</span><span class="pln"> age</span><span class="pun">:</span><span class="pln"> </span><span class="lit">35</span><span class="pln"> </span><span class="pun">},</span></code></li><li class="L2"><code class="language-javascript"><span class="pln">  </span><span class="pun">{</span><span class="pln"> name</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Bob"</span><span class="pun">,</span><span class="pln"> age</span><span class="pun">:</span><span class="pln"> </span><span class="lit">32</span><span class="pln"> </span><span class="pun">},</span></code></li><li class="L3"><code class="language-javascript"><span class="pln">  </span><span class="pun">{</span><span class="pln"> name</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Charlie"</span><span class="pun">,</span><span class="pln"> age</span><span class="pun">:</span><span class="pln"> </span><span class="lit">38</span><span class="pln"> </span><span class="pun">}</span></code></li><li class="L4"><code class="language-javascript"><span class="pun">];</span></code></li><li class="L5"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> employee </span><span class="pun">=</span><span class="pln"> employees</span><span class="pun">.</span><span class="pln">map</span><span class="pun">((</span><span class="pln">employee</span><span class="pun">)</span><span class="pln"> </span><span class="pun">=&gt;</span><span class="pln"> </span><span class="pun">{</span></code></li><li class="L6"><code class="language-javascript"><span class="kwd">return</span><span class="pln"> employee</span><span class="pun">});</span></code></li><li class="L7"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">employee</span><span class="pun">);</span></code></li><li class="L8"><code class="language-javascript"></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="z5gntx">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-35">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="alqn34">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-35">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+    
+<tr>
+<td><b>Searching for Objects</b></td>
+<td>
+You can search for objects within an array of objects using array methods like find.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li></ol><ol class="linenums"><li class="L0"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> employees </span><span class="pun">=</span><span class="pln"> </span><span class="pun">[</span></code></li><li class="L1"><code class="language-javascript"><span class="pln">  </span><span class="pun">{</span><span class="pln"> name</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Alice"</span><span class="pun">,</span><span class="pln"> age</span><span class="pun">:</span><span class="pln"> </span><span class="lit">35</span><span class="pln"> </span><span class="pun">},</span></code></li><li class="L2"><code class="language-javascript"><span class="pln">  </span><span class="pun">{</span><span class="pln"> name</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Bob"</span><span class="pun">,</span><span class="pln"> age</span><span class="pun">:</span><span class="pln"> </span><span class="lit">32</span><span class="pln"> </span><span class="pun">},</span></code></li><li class="L3"><code class="language-javascript"><span class="pln">  </span><span class="pun">{</span><span class="pln"> name</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Charlie"</span><span class="pun">,</span><span class="pln"> age</span><span class="pun">:</span><span class="pln"> </span><span class="lit">38</span><span class="pln"> </span><span class="pun">}</span></code></li><li class="L4"><code class="language-javascript"><span class="pun">];</span></code></li><li class="L5"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> employee </span><span class="pun">=</span><span class="pln"> employees</span><span class="pun">.</span><span class="pln">find</span><span class="pun">(</span><span class="pln">employee </span><span class="pun">=&gt;</span><span class="pln"> employee</span><span class="pun">.</span><span class="pln">name </span><span class="pun">===</span><span class="pln"> </span><span class="str">"Charlie"</span><span class="pun">);</span></code></li><li class="L6"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">employee</span><span class="pun">.</span><span class="pln">age</span><span class="pun">);</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="b2tvwe">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-36">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="mtnlmq">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-36">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+    
+<tr>
+<td><b>Nested Array of objects</b></td>
+<td>
+An array of objects is used to store and organize data in a way that allows you to access and manipulate the information easily.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li>16</li><li>17</li><li>18</li><li>19</li><li>20</li><li>21</li><li>22</li><li>23</li><li>24</li><li>25</li><li>26</li><li>27</li><li>28</li><li>29</li><li>30</li><li>31</li><li>32</li><li>33</li><li>34</li><li>35</li><li>36</li><li>37</li></ol><ol class="linenums"><li class="L0"><code class="language-javascript"><span class="pln">let arrayOfObjects </span><span class="pun">=</span><span class="pln"> </span><span class="pun">[</span></code></li><li class="L1"><code class="language-javascript"><span class="pln">  </span><span class="pun">{</span></code></li><li class="L2"><code class="language-javascript"><span class="pln">    name</span><span class="pun">:</span><span class="pln"> </span><span class="str">'John'</span><span class="pun">,</span></code></li><li class="L3"><code class="language-javascript"><span class="pln">    age</span><span class="pun">:</span><span class="pln"> </span><span class="lit">25</span><span class="pun">,</span></code></li><li class="L4"><code class="language-javascript"><span class="pln">    hobbies</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="str">'Reading'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Traveling'</span><span class="pun">],</span></code></li><li class="L5"><code class="language-javascript"><span class="pln">    address</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span></code></li><li class="L6"><code class="language-javascript"><span class="pln">      street</span><span class="pun">:</span><span class="pln"> </span><span class="str">'123 Main St'</span><span class="pun">,</span></code></li><li class="L7"><code class="language-javascript"><span class="pln">      city</span><span class="pun">:</span><span class="pln"> </span><span class="str">'New York'</span><span class="pun">,</span></code></li><li class="L8"><code class="language-javascript"><span class="pln">      zip</span><span class="pun">:</span><span class="pln"> </span><span class="str">'10001'</span></code></li><li class="L9"><code class="language-javascript"><span class="pln">    </span><span class="pun">}</span></code></li><li class="L0"><code class="language-javascript"><span class="pln">  </span><span class="pun">},</span></code></li><li class="L1"><code class="language-javascript"><span class="pln">  </span><span class="pun">{</span></code></li><li class="L2"><code class="language-javascript"><span class="pln">    name</span><span class="pun">:</span><span class="pln"> </span><span class="str">'Alice'</span><span class="pun">,</span></code></li><li class="L3"><code class="language-javascript"><span class="pln">    age</span><span class="pun">:</span><span class="pln"> </span><span class="lit">30</span><span class="pun">,</span></code></li><li class="L4"><code class="language-javascript"><span class="pln">    skills</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="str">'JavaScript'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'React'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Node.js'</span><span class="pun">],</span></code></li><li class="L5"><code class="language-javascript"><span class="pln">    projects</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span></code></li><li class="L6"><code class="language-javascript"><span class="pln">      </span><span class="pun">{</span><span class="pln"> title</span><span class="pun">:</span><span class="pln"> </span><span class="str">'Project A'</span><span class="pun">,</span><span class="pln"> completed</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pln"> </span><span class="pun">},</span></code></li><li class="L7"><code class="language-javascript"><span class="pln">      </span><span class="pun">{</span><span class="pln"> title</span><span class="pun">:</span><span class="pln"> </span><span class="str">'Project B'</span><span class="pun">,</span><span class="pln"> completed</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pln"> </span><span class="pun">}</span></code></li><li class="L8"><code class="language-javascript"><span class="pln">    </span><span class="pun">]</span></code></li><li class="L9"><code class="language-javascript"><span class="pln">  </span><span class="pun">},</span></code></li><li class="L0"><code class="language-javascript"><span class="pln">  </span><span class="pun">{</span></code></li><li class="L1"><code class="language-javascript"><span class="pln">    title</span><span class="pun">:</span><span class="pln"> </span><span class="str">'Special Object'</span><span class="pun">,</span></code></li><li class="L2"><code class="language-javascript"><span class="pln">    data</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="lit">2</span><span class="pun">,</span><span class="pln"> </span><span class="lit">3</span><span class="pun">],</span></code></li><li class="L3"><code class="language-javascript"><span class="pln">    metadata</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> key</span><span class="pun">:</span><span class="pln"> </span><span class="str">'value'</span><span class="pln"> </span><span class="pun">}</span></code></li><li class="L4"><code class="language-javascript"><span class="pln">  </span><span class="pun">},</span></code></li><li class="L5"><code class="language-javascript"><span class="pln">  </span><span class="pun">{</span></code></li><li class="L6"><code class="language-javascript"><span class="pln">    </span><span class="com">// An object with no specific properties</span></code></li><li class="L7"><code class="language-javascript"><span class="pln">  </span><span class="pun">},</span></code></li><li class="L8"><code class="language-javascript"><span class="pln">  </span><span class="pun">{</span></code></li><li class="L9"><code class="language-javascript"><span class="pln">    anotherObject</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">,</span></code></li><li class="L0"><code class="language-javascript"><span class="pln">    nestedArrays</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span></code></li><li class="L1"><code class="language-javascript"><span class="pln">      </span><span class="pun">[</span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="lit">2</span><span class="pun">,</span><span class="pln"> </span><span class="lit">3</span><span class="pun">],</span></code></li><li class="L2"><code class="language-javascript"><span class="pln">      </span><span class="pun">[</span><span class="str">'a'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'b'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'c'</span><span class="pun">]</span></code></li><li class="L3"><code class="language-javascript"><span class="pln">    </span><span class="pun">],</span></code></li><li class="L4"><code class="language-javascript"><span class="pln">    additionalProperty</span><span class="pun">:</span><span class="pln"> </span><span class="str">'Extra'</span></code></li><li class="L5"><code class="language-javascript"><span class="pln">  </span><span class="pun">}</span></code></li><li class="L6"><code class="language-javascript"><span class="pun">];</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="59v8mn">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-37">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="t9t4gx">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-37">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+    
+<tr>
+<td><b>Access Nested Array-Code Above</b></td>
+<td>
+Using . dot operator elements of nested array can be accesed, which has been described in just above code.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li><li>11</li><li>12</li><li>13</li></ol><ol class="linenums"><li class="L0"><code class="language-javascript"><span class="com">// Accessing properties of the first object</span></code></li><li class="L1"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">arrayOfObjects</span><span class="pun">[</span><span class="lit">0</span><span class="pun">].</span><span class="pln">name</span><span class="pun">);</span><span class="pln"> </span><span class="com">// Output: John</span></code></li><li class="L2"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">arrayOfObjects</span><span class="pun">[</span><span class="lit">0</span><span class="pun">].</span><span class="pln">hobbies</span><span class="pun">[</span><span class="lit">0</span><span class="pun">]);</span><span class="pln"> </span><span class="com">// Output: Reading</span></code></li><li class="L3"><code class="language-javascript"><span class="com">// Accessing properties of the second object</span></code></li><li class="L4"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">arrayOfObjects</span><span class="pun">[</span><span class="lit">1</span><span class="pun">].</span><span class="pln">skills</span><span class="pun">[</span><span class="lit">2</span><span class="pun">]);</span><span class="pln"> </span><span class="com">// Output: Node.js</span></code></li><li class="L5"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">arrayOfObjects</span><span class="pun">[</span><span class="lit">1</span><span class="pun">].</span><span class="pln">projects</span><span class="pun">[</span><span class="lit">0</span><span class="pun">].</span><span class="pln">title</span><span class="pun">);</span><span class="pln"> </span><span class="com">// Output: Project A</span></code></li><li class="L6"><code class="language-javascript"><span class="com">// Accessing properties of the third object</span></code></li><li class="L7"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">arrayOfObjects</span><span class="pun">[</span><span class="lit">2</span><span class="pun">].</span><span class="pln">metadata</span><span class="pun">.</span><span class="pln">key</span><span class="pun">);</span><span class="pln"> </span><span class="com">// Output: value</span></code></li><li class="L8"><code class="language-javascript"><span class="com">// Accessing properties of the fourth object</span></code></li><li class="L9"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">arrayOfObjects</span><span class="pun">[</span><span class="lit">3</span><span class="pun">]);</span><span class="pln"> </span><span class="com">// Output: {}</span></code></li><li class="L0"><code class="language-javascript"><span class="com">// Accessing properties of the fifth object</span></code></li><li class="L1"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">arrayOfObjects</span><span class="pun">[</span><span class="lit">4</span><span class="pun">].</span><span class="pln">anotherObject</span><span class="pun">);</span><span class="pln"> </span><span class="com">// Output: true</span></code></li><li class="L2"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">arrayOfObjects</span><span class="pun">[</span><span class="lit">4</span><span class="pun">].</span><span class="pln">additionalProperty</span><span class="pun">);</span><span class="pln"> </span><span class="com">// Output: Extra</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="k5zr8">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-38">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="24mymh">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-38">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+    
+<tr>
+<td><b>Strings</b></td>
+<td>
+Strings are data type in JavaScript used to represent text. They can contain letters, numbers, symbols, and whitespace characters.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li></ol><ol class="linenums"><li class="L0"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> message </span><span class="pun">=</span><span class="pln"> </span><span class="str">"This is a message."</span><span class="pun">;</span></code></li></ol>
+          <div class="code-block-actions z-0 single-line">
+            <button title="Copy" class="action-code-block copy-code-block" fdprocessedid="oy7g9h">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-39">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block" fdprocessedid="7nzy26">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-39">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+    
+<tr>
+<td><b>Strings</b></td>
+<td>
+Strings are data type in JavaScript used to represent text. They can contain letters, numbers, symbols, and whitespace characters.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li></ol><ol class="linenums"><li class="L0"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> message </span><span class="pun">=</span><span class="pln"> </span><span class="str">"This is a message."</span><span class="pun">;</span></code></li></ol>
+          <div class="code-block-actions z-0 single-line">
+            <button title="Copy" class="action-code-block copy-code-block" fdprocessedid="pq7s1g">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-40">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block" fdprocessedid="wz6xwe">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-40">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+    
+<tr>
+<td><b>template literals</b></td>
+<td>
+Template literals in JavaScript are strings allowing embedded expressions, denoted by backticks (), enabling easy multiline strings and interpolation of variables using ${}`.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li></ol><ol class="linenums"><li class="L0"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> fullName </span><span class="pun">=</span><span class="pln"> </span><span class="pun">`</span><span class="pln">$</span><span class="pun">{</span><span class="pln">firstName</span><span class="pun">}</span><span class="pln"> $</span><span class="pun">{</span><span class="pln">lastName</span><span class="pun">}`;</span></code></li></ol>
+          <div class="code-block-actions z-0 single-line">
+            <button title="Copy" class="action-code-block copy-code-block" fdprocessedid="qmpc3v">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-41">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block" fdprocessedid="l4pm0s">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-41">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+    
+<tr>
+<td><b>String Concatenation</b></td>
+<td>
+The concatenation operator + in JavaScript is used to combine (join) two or more strings together to create a single, longer string.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li></ol><ol class="linenums"><li class="L0"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> firstName</span><span class="pun">=</span><span class="str">'Peter'</span><span class="pun">;</span></code></li><li class="L1"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> greeting </span><span class="pun">=</span><span class="pln"> </span><span class="str">'Hello, '</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> firstName </span><span class="pun">+</span><span class="pln"> </span><span class="str">'!'</span><span class="pun">;</span></code></li><li class="L2"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">greeting</span><span class="pun">);</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="xr0j68">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-42">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="4v88p">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-42">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+    
+<tr>
+<td><b>String Length</b></td>
+<td>
+To determine the length of a string, length property can be used.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li></ol><ol class="linenums"><li class="L0"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> message1 </span><span class="pun">=</span><span class="pln"> </span><span class="str">"This is a message."</span><span class="pun">;</span></code></li><li class="L1"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> </span><span class="typ">Stringlength1</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> message1</span><span class="pun">.</span><span class="pln">length</span><span class="pun">;</span></code></li><li class="L2"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> message2 </span><span class="pun">=</span><span class="pln"> </span><span class="str">"Thisisamessage"</span><span class="pun">;</span></code></li><li class="L3"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> </span><span class="typ">Stringlength2</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> message2</span><span class="pun">.</span><span class="pln">length</span><span class="pun">;</span></code></li><li class="L4"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="typ">Stringlength1</span><span class="pun">);</span></code></li><li class="L5"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="typ">Stringlength2</span><span class="pun">)</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="wjl3jf">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-43">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="kb41j">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-43">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+<tr>
+<td><b>Accessing Characters</b></td>
+<td>
+Individual characters within a string can be accessed using bracket notation and a zero-based index.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li></ol><ol class="linenums"><li class="L0"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> text </span><span class="pun">=</span><span class="pln"> </span><span class="str">"JavaScript"</span><span class="pun">;</span></code></li><li class="L1"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> firstCharacter </span><span class="pun">=</span><span class="pln"> text</span><span class="pun">[</span><span class="lit">0</span><span class="pun">];</span><span class="pln"> </span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="yeapwd">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-44">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="fo112k">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-44">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+<tr>
+<td><b>toLowerCase and toUpperCase</b></td>
+<td>
+JavaScript provides methods to change the case of a string into lowercase and uppercase.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ol><ol class="linenums"><li class="L0"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> text </span><span class="pun">=</span><span class="pln"> </span><span class="str">"Hello, World!"</span><span class="pun">;</span></code></li><li class="L1"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> lowercaseText </span><span class="pun">=</span><span class="pln"> text</span><span class="pun">.</span><span class="pln">toLowerCase</span><span class="pun">();</span><span class="pln"> </span><span class="com">// "hello, world!"</span></code></li><li class="L2"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> uppercaseText </span><span class="pun">=</span><span class="pln"> text</span><span class="pun">.</span><span class="pln">toUpperCase</span><span class="pun">();</span><span class="pln"> </span><span class="com">// "HELLO, WORLD!"</span></code></li><li class="L3"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="str">'The lowercase  for text is '</span><span class="pun">,</span><span class="pln">lowercaseText</span><span class="pun">);</span></code></li><li class="L4"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="str">'The uppercase  for text is '</span><span class="pun">,</span><span class="pln">uppercaseText</span><span class="pun">);</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="efl5dl">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-45">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="m19tbvp">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-45">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+<tr>
+<td><b>indexOf() method</b></td>
+<td>
+indexOf returns the index of the first occurrence of a specified substring within a string. It returns -1 if the substring is not found.
+
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li></ol><ol class="linenums"><li class="L0"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> sentence </span><span class="pun">=</span><span class="pln"> </span><span class="str">"The quick brown fox jumps over the lazy dog."</span><span class="pun">;</span></code></li><li class="L1"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> indexOfFox </span><span class="pun">=</span><span class="pln"> sentence</span><span class="pun">.</span><span class="pln">indexOf</span><span class="pun">(</span><span class="str">"fox"</span><span class="pun">);</span><span class="pln"> </span><span class="com">// 16</span></code></li><li class="L2"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">indexOfFox</span><span class="pun">);</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="yntf9n">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-46">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="xjb8nb">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-46">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+    
+<tr>
+<td><b>includes() method</b></td>
+<td>
+includes returns a boolean indicating whether a specified substring is found within a string, returning true if found and false if not.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li></ol><ol class="linenums"><li class="L0"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> sentence </span><span class="pun">=</span><span class="pln"> </span><span class="str">"The quick brown fox jumps over the lazy dog."</span><span class="pun">;</span></code></li><li class="L1"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> hasFox </span><span class="pun">=</span><span class="pln"> sentence</span><span class="pun">.</span><span class="pln">includes</span><span class="pun">(</span><span class="str">"fox"</span><span class="pun">);</span><span class="pln"> </span><span class="com">// true</span></code></li><li class="L2"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">hasFox</span><span class="pun">);</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="3jjz8">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-47">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="9bzmvc">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-47">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+    
+<tr>
+<td><b>substring() methods</b></td>
+<td>
+substring extracts characters from a string between two specified indices.  It means extracting a substring from the text starting at index 0 and ending at index 5 (excluding index 5).
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li></ol><ol class="linenums"><li class="L0"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> text </span><span class="pun">=</span><span class="pln"> </span><span class="str">"Hello, World!"</span><span class="pun">;</span></code></li><li class="L1"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> subText1 </span><span class="pun">=</span><span class="pln"> text</span><span class="pun">.</span><span class="pln">substring</span><span class="pun">(</span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="lit">5</span><span class="pun">);</span><span class="pln"> </span><span class="com">// "Hello"</span></code></li><li class="L2"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">subText1</span><span class="pun">);</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="ympvzo">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-48">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="e751c">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-48">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+    
+<tr>
+<td><b>slice() method</b></td>
+<td>
+slice extracts a section of a string and returns it as a new string, specifying the start and end positions.  It means extracting a substring from the text starting at index 7 until the end of the string.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li></ol><ol class="linenums"><li class="L0"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> text </span><span class="pun">=</span><span class="pln"> </span><span class="str">"Hello, World!"</span><span class="pun">;</span></code></li><li class="L1"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> subText2 </span><span class="pun">=</span><span class="pln"> text</span><span class="pun">.</span><span class="pln">slice</span><span class="pun">(</span><span class="lit">7</span><span class="pun">);</span><span class="pln">        </span><span class="com">// "World!"</span></code></li><li class="L2"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">subText2</span><span class="pun">);</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="si94u">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-49">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="h7cu8">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-49">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+    
+<tr>
+<td><b>substr() method</b></td>
+<td>
+substr extracts a specified number of characters from a string, starting at a specified index.It means extracting a substring from the text starting at the 7th index and including 5 characters.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li></ol><ol class="linenums"><li class="L0"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> text </span><span class="pun">=</span><span class="pln"> </span><span class="str">"Hello, World!"</span><span class="pun">;</span></code></li><li class="L1"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> subText3 </span><span class="pun">=</span><span class="pln"> text</span><span class="pun">.</span><span class="pln">substr</span><span class="pun">(</span><span class="lit">7</span><span class="pun">,</span><span class="pln"> </span><span class="lit">5</span><span class="pun">);</span><span class="pln">    </span><span class="com">// "World"</span></code></li><li class="L2"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">subText3</span><span class="pun">);</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="t5hnw">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-50">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="wgswxw">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-50">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+    
+<tr>
+<td><b>Replacing Substrings</b></td>
+<td>
+The replace method allows you to replace substrings with new values.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li></ol><ol class="linenums"><li class="L0"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> text </span><span class="pun">=</span><span class="pln"> </span><span class="str">"Hello, World!"</span><span class="pun">;</span></code></li><li class="L1"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> updatedText </span><span class="pun">=</span><span class="pln"> text</span><span class="pun">.</span><span class="pln">replace</span><span class="pun">(</span><span class="str">"World"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"Universe"</span><span class="pun">);</span><span class="pln"> </span></code></li><li class="L2"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">updatedText</span><span class="pun">);</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="5vncca">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-51">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="0loilt">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-51">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+    
+<tr>
+<td><b>Splitting Strings</b></td>
+<td>
+You can split a string into an array of substrings using the split method.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li></ol><ol class="linenums"><li class="L0"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> csvData </span><span class="pun">=</span><span class="pln"> </span><span class="str">"Alice,25,New York;Bob,30,Los Angeles;Charlie,28,Chicago"</span><span class="pun">;</span></code></li><li class="L1"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> peopleArray </span><span class="pun">=</span><span class="pln"> csvData</span><span class="pun">.</span><span class="pln">split</span><span class="pun">(</span><span class="str">';'</span><span class="pun">);</span></code></li><li class="L2"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">peopleArray</span><span class="pun">);</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="k95l7j">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-52">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="58kepd">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-52">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+
+<tr>
+<td><b>trim()method</b></td>
+<td>
+The trim method removes leading and trailing whitespace from a string.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li><li>4</li></ol><ol class="linenums"><li class="L0"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> text </span><span class="pun">=</span><span class="pln"> </span><span class="str">"   Trim me!   "</span><span class="pun">;</span></code></li><li class="L1"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">text</span><span class="pun">.</span><span class="pln">length</span><span class="pun">);</span></code></li><li class="L2"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> trimmedText </span><span class="pun">=</span><span class="pln"> text</span><span class="pun">.</span><span class="pln">trim</span><span class="pun">();</span></code></li><li class="L3"><code class="language-javascript"><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">trimmedText</span><span class="pun">.</span><span class="pln">length</span><span class="pun">);</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="q2kwhd">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-53">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="tl37qp">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-53">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+    
+<tr>
+<td><b>round(), ceil() and floor() Math Methods</b></td>
+<td>
+round() rounds a number to the nearest integer.
+ceil() rounds a number up to the nearest integer.
+floor() rounds a number down to the nearest integer.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li><li>4</li></ol><ol class="linenums"><li class="L0"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> number </span><span class="pun">=</span><span class="pln"> </span><span class="lit">3.6</span><span class="pun">;</span></code></li><li class="L1"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> rounded </span><span class="pun">=</span><span class="pln"> </span><span class="typ">Math</span><span class="pun">.</span><span class="pln">round</span><span class="pun">(</span><span class="pln">number</span><span class="pun">);</span><span class="pln"> </span><span class="com">// Round to nearest integer: 4</span></code></li><li class="L2"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> ceil </span><span class="pun">=</span><span class="pln"> </span><span class="typ">Math</span><span class="pun">.</span><span class="pln">ceil</span><span class="pun">(</span><span class="pln">number</span><span class="pun">);</span><span class="pln">   </span><span class="com">// Round up: 4</span></code></li><li class="L3"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> floor </span><span class="pun">=</span><span class="pln"> </span><span class="typ">Math</span><span class="pun">.</span><span class="pln">floor</span><span class="pun">(</span><span class="pln">number</span><span class="pun">);</span><span class="pln">   </span><span class="com">// Round down: 3</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="5qxuyd">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-54">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="ok3ykv">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-54">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+    
+    
+<tr>
+<td><b>pow(), sqrt() and log() Math Methods</b></td>
+<td>
+pow() raises a number to a specified exponent.
+sqrt() returns the square root of a number.
+log() returns the natural logarithm (base e) of a number.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ol><ol class="linenums"><li class="L0"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> base </span><span class="pun">=</span><span class="pln"> </span><span class="lit">2</span><span class="pun">;</span></code></li><li class="L1"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> exponent </span><span class="pun">=</span><span class="pln"> </span><span class="lit">3</span><span class="pun">;</span></code></li><li class="L2"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> power </span><span class="pun">=</span><span class="pln"> </span><span class="typ">Math</span><span class="pun">.</span><span class="pln">pow</span><span class="pun">(</span><span class="pln">base</span><span class="pun">,</span><span class="pln"> exponent</span><span class="pun">);</span><span class="pln"> </span><span class="com">// Power: 8</span></code></li><li class="L3"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> squareRoot </span><span class="pun">=</span><span class="pln"> </span><span class="typ">Math</span><span class="pun">.</span><span class="pln">sqrt</span><span class="pun">(</span><span class="pln">base</span><span class="pun">);</span><span class="pln">     </span><span class="com">// Square Root: 1.41421356237</span></code></li><li class="L4"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> naturalLog </span><span class="pun">=</span><span class="pln"> </span><span class="typ">Math</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">base</span><span class="pun">);</span><span class="pln">      </span><span class="com">// Natural Logarithm: 0.69314718056</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="uhsg3k">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-55">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="151yb8">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-55">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+    
+
+<tr>
+<td><b>random() Method</b></td>
+<td>
+The random() method in JavaScript generates a pseudo-random floating-point number between 0 (inclusive) and n (exclusive).
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li>16</li><li>17</li><li>18</li><li>19</li><li>20</li><li>21</li><li>22</li><li>23</li><li>24</li><li>25</li><li>26</li><li>27</li><li>28</li><li>29</li><li>30</li><li>31</li></ol><ol class="linenums"><li class="L0"><code class="language-javascript"><span class="pun">&lt;!</span><span class="pln">DOCTYPE html</span><span class="pun">&gt;</span></code></li><li class="L1"><code class="language-javascript"><span class="pun">&lt;</span><span class="pln">html</span><span class="pun">&gt;</span></code></li><li class="L2"><code class="language-javascript"><span class="pun">&lt;</span><span class="pln">head</span><span class="pun">&gt;</span></code></li><li class="L3"><code class="language-javascript"><span class="pln">  </span><span class="pun">&lt;</span><span class="pln">title</span><span class="pun">&gt;</span><span class="typ">Random</span><span class="pln"> </span><span class="typ">Quote</span><span class="pln"> </span><span class="typ">Generator</span><span class="pun">&lt;/</span><span class="pln">title</span><span class="pun">&gt;</span></code></li><li class="L4"><code class="language-javascript"><span class="pun">&lt;/</span><span class="pln">head</span><span class="pun">&gt;</span></code></li><li class="L5"><code class="language-javascript"><span class="pun">&lt;</span><span class="pln">body</span><span class="pun">&gt;</span></code></li><li class="L6"><code class="language-javascript"><span class="pln">  </span><span class="pun">&lt;</span><span class="pln">h1</span><span class="pun">&gt;</span><span class="typ">Random</span><span class="pln"> </span><span class="typ">Quote</span><span class="pln"> </span><span class="typ">Generator</span><span class="pun">&lt;/</span><span class="pln">h1</span><span class="pun">&gt;</span></code></li><li class="L7"><code class="language-javascript"><span class="pln">  </span></code></li><li class="L8"><code class="language-javascript"><span class="pln">  </span><span class="pun">&lt;</span><span class="pln">p id</span><span class="pun">=</span><span class="str">"quoteDisplay"</span><span class="pun">&gt;&lt;/</span><span class="pln">p</span><span class="pun">&gt;</span></code></li><li class="L9"><code class="language-javascript"><span class="pln">  </span></code></li><li class="L0"><code class="language-javascript"><span class="pln">  </span><span class="pun">&lt;</span><span class="pln">button onclick</span><span class="pun">=</span><span class="str">"generateRandomQuote()"</span><span class="pun">&gt;</span><span class="typ">Get</span><span class="pln"> </span><span class="typ">Quote</span><span class="pun">&lt;/</span><span class="pln">button</span><span class="pun">&gt;</span></code></li><li class="L1"><code class="language-javascript"><span class="pln">  </span></code></li><li class="L2"><code class="language-javascript"><span class="pln">  </span><span class="pun">&lt;</span><span class="pln">script</span><span class="pun">&gt;</span></code></li><li class="L3"><code class="language-javascript"><span class="pln">    </span><span class="kwd">const</span><span class="pln"> quotes </span><span class="pun">=</span><span class="pln"> </span><span class="pun">[</span></code></li><li class="L4"><code class="language-javascript"><span class="pln">      </span><span class="str">"Life is what happens when you're busy making other plans. - John Lennon"</span><span class="pun">,</span></code></li><li class="L5"><code class="language-javascript"><span class="pln">      </span><span class="str">"The only way to do great work is to love what you do. - Steve Jobs"</span><span class="pun">,</span></code></li><li class="L6"><code class="language-javascript"><span class="pln">      </span><span class="str">"In three words, I can sum up everything I've learned about life: it goes on. - Robert Frost"</span><span class="pun">,</span></code></li><li class="L7"><code class="language-javascript"><span class="pln">      </span><span class="str">"Don't count the days, make the days count. - Muhammad Ali"</span><span class="pun">,</span></code></li><li class="L8"><code class="language-javascript"><span class="pln">      </span><span class="str">"The only thing we have to fear is fear itself. - Franklin D. Roosevelt"</span><span class="pun">,</span></code></li><li class="L9"><code class="language-javascript"><span class="pln">      </span><span class="str">"To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment. - Ralph Waldo Emerson"</span></code></li><li class="L0"><code class="language-javascript"><span class="pln">    </span><span class="pun">];</span></code></li><li class="L1"><code class="language-javascript"><span class="pln">    </span></code></li><li class="L2"><code class="language-javascript"><span class="pln">    </span><span class="kwd">function</span><span class="pln"> generateRandomQuote</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span></code></li><li class="L3"><code class="language-javascript"><span class="pln">      </span><span class="kwd">const</span><span class="pln"> randomIndex </span><span class="pun">=</span><span class="pln"> </span><span class="typ">Math</span><span class="pun">.</span><span class="pln">floor</span><span class="pun">(</span><span class="typ">Math</span><span class="pun">.</span><span class="pln">random</span><span class="pun">()</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> quotes</span><span class="pun">.</span><span class="pln">length</span><span class="pun">);</span><span class="pln"> </span><span class="com">// Generate a random index</span></code></li><li class="L4"><code class="language-javascript"><span class="pln">      </span><span class="kwd">const</span><span class="pln"> randomQuote </span><span class="pun">=</span><span class="pln"> quotes</span><span class="pun">[</span><span class="pln">randomIndex</span><span class="pun">];</span><span class="pln"> </span><span class="com">// Get a random quote</span></code></li><li class="L5"><code class="language-javascript"><span class="pln">      </span></code></li><li class="L6"><code class="language-javascript"><span class="pln">      document</span><span class="pun">.</span><span class="pln">getElementById</span><span class="pun">(</span><span class="str">"quoteDisplay"</span><span class="pun">).</span><span class="pln">textContent </span><span class="pun">=</span><span class="pln"> randomQuote</span><span class="pun">;</span></code></li><li class="L7"><code class="language-javascript"><span class="pln">    </span><span class="pun">}</span></code></li><li class="L8"><code class="language-javascript"><span class="pln">  </span><span class="pun">&lt;/</span><span class="pln">script</span><span class="pun">&gt;</span></code></li><li class="L9"><code class="language-javascript"><span class="pun">&lt;/</span><span class="pln">body</span><span class="pun">&gt;</span></code></li><li class="L0"><code class="language-javascript"><span class="pun">&lt;/</span><span class="pln">html</span><span class="pun">&gt;</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="5vkmlk">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-56">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="g2o9v8">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-56">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+
+<tr>
+<td><b>Date Object</b></td>
+<td>
+Date objects are used to represent specific moments in time.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li></ol><ol class="linenums"><li class="L0"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> currentDate </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Date</span><span class="pun">();</span><span class="pln"> </span><span class="com">// Current date and time</span></code></li><li class="L1"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> specificDate </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Date</span><span class="pun">(</span><span class="lit">2023</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="lit">15</span><span class="pun">);</span><span class="pln"> </span><span class="com">// January 15, 2023</span></code></li><li class="L2"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> fromMilliseconds </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Date</span><span class="pun">(</span><span class="lit">1672569600000</span><span class="pun">);</span><span class="pln"> </span><span class="com">// From milliseconds since the epoch</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="4pksvm">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-57">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="1z0tbh">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-57">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+    
+    
+    
+<tr>
+<td><b>Retrieving Date</b></td>
+<td>
+Date objects provide access to individual components of a date, such as year, month, day, and hour.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li></ol><ol class="linenums"><li class="L0"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> date </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Date</span><span class="pun">();</span></code></li><li class="L1"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> year </span><span class="pun">=</span><span class="pln"> date</span><span class="pun">.</span><span class="pln">getFullYear</span><span class="pun">();</span><span class="pln">     </span><span class="com">// Current year</span></code></li><li class="L2"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> month </span><span class="pun">=</span><span class="pln"> date</span><span class="pun">.</span><span class="pln">getMonth</span><span class="pun">();</span><span class="pln">       </span><span class="com">// Current month (0-11)</span></code></li><li class="L3"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> day </span><span class="pun">=</span><span class="pln"> date</span><span class="pun">.</span><span class="pln">getDate</span><span class="pun">();</span><span class="pln">         </span><span class="com">// Day of the month (1-31)</span></code></li><li class="L4"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> hours </span><span class="pun">=</span><span class="pln"> date</span><span class="pun">.</span><span class="pln">getHours</span><span class="pun">();</span><span class="pln">      </span><span class="com">// Hours (0-23)</span></code></li><li class="L5"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> minutes </span><span class="pun">=</span><span class="pln"> date</span><span class="pun">.</span><span class="pln">getMinutes</span><span class="pun">();</span><span class="pln">  </span><span class="com">// Minutes (0-59)</span></code></li><li class="L6"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> seconds </span><span class="pun">=</span><span class="pln"> date</span><span class="pun">.</span><span class="pln">getSeconds</span><span class="pun">();</span><span class="pln">  </span><span class="com">// Seconds (0-59)</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="z9c0yq">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-58">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="iwfcze">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-58">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+    
+<tr>
+<td><b>toLocaleDateString() and toLocaleTimeString()</b></td>
+<td>
+toLocaleDateString() to converts a date to a string representing the date portion according to the locale's formatting conventions.
+toLocaleTimeString() to converts a date to a string representing the time portion according to the locale's formatting conventions.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li></ol><ol class="linenums"><li class="L0"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> date </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Date</span><span class="pun">();</span></code></li><li class="L1"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> formattedDate </span><span class="pun">=</span><span class="pln"> date</span><span class="pun">.</span><span class="pln">toLocaleDateString</span><span class="pun">();</span><span class="pln"> </span><span class="com">// "11/15/2023"</span></code></li><li class="L2"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> formattedTime </span><span class="pun">=</span><span class="pln"> date</span><span class="pun">.</span><span class="pln">toLocaleTimeString</span><span class="pun">();</span><span class="pln"> </span><span class="com">// "1:30:45 PM"</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="hj5w4i">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-59">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="hnxqqc">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-59">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+    
+    
+<tr>
+<td><b>Date Arithmetic</b></td>
+<td>
+Date objects allow for various date arithmetic operations, including adding and subtracting time intervals.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ol><ol class="linenums"><li class="L0"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> date </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Date</span><span class="pun">();</span></code></li><li class="L1"><code class="language-javascript"><span class="pln">date</span><span class="pun">.</span><span class="pln">setFullYear</span><span class="pun">(</span><span class="lit">2024</span><span class="pun">);</span><span class="pln"> </span><span class="com">// Set the year to 2024</span></code></li><li class="L2"><code class="language-javascript"><span class="pln">date</span><span class="pun">.</span><span class="pln">setDate</span><span class="pun">(</span><span class="pln">date</span><span class="pun">.</span><span class="pln">getDate</span><span class="pun">()</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> </span><span class="lit">7</span><span class="pun">);</span><span class="pln"> </span><span class="com">// Add 7 days</span></code></li><li class="L3"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> futureDate </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Date</span><span class="pun">();</span></code></li><li class="L4"><code class="language-javascript"><span class="pln">futureDate</span><span class="pun">.</span><span class="pln">setDate</span><span class="pun">(</span><span class="pln">futureDate</span><span class="pun">.</span><span class="pln">getDate</span><span class="pun">()</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> </span><span class="lit">30</span><span class="pun">);</span><span class="pln"> </span><span class="com">// Date 30 days from now</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="m0nvps">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-60">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="lf8wbue">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-60">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+
+<tr>
+<td><b>setTimeout() Method</b></td>
+<td>
+The setTimeout function schedules the execution of a function after a specified delay in milliseconds:
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li></ol><ol class="linenums"><li class="L0"><code class="language-javascript"><span class="pln">setTimeout</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span></code></li><li class="L1"><code class="language-javascript"><span class="pln">  console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="str">"This message appears after a delay."</span><span class="pun">);</span></code></li><li class="L2"><code class="language-javascript"><span class="pun">},</span><span class="pln"> </span><span class="lit">2000</span><span class="pun">);</span><span class="pln"> </span><span class="com">// Displayed after a 2-second delay</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="jxrlzk">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-61">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="2bafmm">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-61">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+    
+    
+
+<tr>
+<td><b>setInterval</b></td>
+<td>
+setInterval repeatedly executes a function at a specified interval.
+</td>
+<td>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="formatted-line-numbers"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li></ol><ol class="linenums"><li class="L0"><code class="language-javascript"><span class="pln">let count </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span></code></li><li class="L1"><code class="language-javascript"><span class="kwd">const</span><span class="pln"> intervalId </span><span class="pun">=</span><span class="pln"> setInterval</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span></code></li><li class="L2"><code class="language-javascript"><span class="pln">  console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="str">"Count: "</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> count</span><span class="pun">);</span></code></li><li class="L3"><code class="language-javascript"><span class="pln">  count</span><span class="pun">++;</span></code></li><li class="L4"><code class="language-javascript"><span class="pln">  </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">count </span><span class="pun">&gt;</span><span class="pln"> </span><span class="lit">5</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></code></li><li class="L5"><code class="language-javascript"><span class="pln">    clearInterval</span><span class="pun">(</span><span class="pln">intervalId</span><span class="pun">);</span><span class="pln"> </span><span class="com">// Stop after 6 iterations</span></code></li><li class="L6"><code class="language-javascript"><span class="pln">  </span><span class="pun">}</span></code></li><li class="L7"><code class="language-javascript"><span class="pun">},</span><span class="pln"> </span><span class="lit">1000</span><span class="pun">);</span><span class="pln"> </span><span class="com">// Displayed every second.</span></code></li></ol>
+          <div class="code-block-actions multiple-lines z-0">
+            <button title="Copy" class="action-code-block copy-code-block multiple-lines" fdprocessedid="goht3d">
+              <i class="fa fa-copy" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-copy-62">Copied!</span>
+            </button>
+            <button title="Toggle Wrap" class="action-code-block wrap-code-block multiple-lines" fdprocessedid="09ab9">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+              <span class="popuptext" id="md-code-block-wrap-62">Wrap Toggled!</span>
+            </button>
+            
+            
+          </div>
+        </pre>
+</td>
+</tr>
+
+</tbody></table>
     <script src="./scope_lab.js"></script>
 </body>
 </html>
