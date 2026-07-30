@@ -26,7 +26,8 @@ function showbooks() {
         <p><strong>Author Name:</strong> ${book.authorName}</p>
         <p><strong>Book Description:</strong> ${book.bookDescription}</p>
         <p><strong>No. of Pages:</strong> ${book.pagesNumber} page(s)</p>
-        <button onclick="editbook(${index})">Edit</button>`
+        <button onclick="editbook(${index})">Edit</button>
+        <button onclick="deleteBook(${index})">Delete Book</button>`
     });
     document.getElementById('books').innerHTML = render_books;
 }
@@ -42,6 +43,10 @@ function editbook(index) {
     document.getElementById('bookDescription').value = books[index].bookDescription
     document.getElementById('pagesNumber').value = books[index].pagesNumber
     showBookNumber(index);
+    books.splice(index, 1)
+    showbooks();
+}
+function deleteBook(index){
     books.splice(index, 1)
     showbooks();
 }
