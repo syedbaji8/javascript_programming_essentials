@@ -28,7 +28,7 @@ function showbooks() {
         <p><strong>No. of Pages:</strong> ${book.pagesNumber} page(s)</p>
         <button onclick="editbook(${index})">Edit</button>
         <button onclick="deleteBook(${index})">Delete Book</button>`
-    });
+    }).join();
     document.getElementById('books').innerHTML = render_books;
 }
 function clearInputs() {
